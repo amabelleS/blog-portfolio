@@ -6,8 +6,8 @@ function Logo() {
   return <div >
     <Image
     src={logo}
-    alt='my logo'
-    width={200}
+    alt="Amabelle's logo"
+    width={142}
     height={22}
     className="bg-mint text-mint fill-current m-0"
     priority={true}
