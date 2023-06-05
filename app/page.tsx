@@ -1,15 +1,12 @@
-import Image from 'next/image'
+// import Image from 'next/image'
+import Posts from './components/posts/Posts'
+import Hero from './components/home-page/Hero'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between px-6 mx-auto">
-      {/* <h1 className="text-4xl font-bold text-center">hy</h1> */}
-      <p className="mt-12 mb-12 text-3xl text-center dark:text-white">
-        Hello and Welcome 👋&nbsp;
-        <span className="whitespace-nowrap">
-          I&apos;m <span className="font-bold">Amabelle</span>.
-        </span>
-      </p>
+    <main className="flex min-h-screen flex-col items-center justify-between px-6 mb-4 mx-auto">
+      <Hero/>
+      <Posts />
     </main>
   )
 }
