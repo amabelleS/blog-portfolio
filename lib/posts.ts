@@ -22,33 +22,51 @@ export function getSortedPostsData() {
         // Use gray-matter to parse the post metadata section
         const matterResult = matter(fileContents);
 
-        const blogPost: BlogPost = {
+        const processedContent = remark()
+            // .use(html)
+            .use(html, { sanitize: false })
+            // .use(remarkPrism)
+            .process(matterResult.content);
+
+        const contentHtml = processedContent.toString();
+
+        const blogPostWithHTML: BlogPost & { contentHtml: string } = {
             id,
             title: matterResult.data.title,
             date: matterResult.data.date,
+            contentHtml,
         }
-
+    
         // Combine the data with the id
-        return blogPost
+        return blogPostWithHTML
+        // const blogPost: BlogPost = {
+        //     id,
+        //     title: matterResult.data.title,
+        //     date: matterResult.data.date,
+        // }
+
+        // // Combine the data with the id
+        // return blogPost
     });
     // Sort posts by date
     return allPostsData.sort((a, b) => a.date < b.date ? 1 : -1);
 }
 
 export async function getPostData(id: string) {
-    const fullPath = path.join(postsDirectory, `${id}.md`);
+    const fullPath = path.join( postsDirectory, `${id}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
 
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
-    const contentHtml = await markdownToHtml(matterResult.content || "");
+    // const contentHtml = await markdownToHtml(matterResult.content || "");
 
-    // const processedContent = await remark()
-    //     .use(html)
-    //     // .use(remarkPrism)
-    //     .process(matterResult.content);
+    const processedContent = await remark()
+        // .use(html)
+        .use(html, { sanitize: false })
+        // .use(remarkPrism)
+        .process(matterResult.content);
 
-    // const contentHtml = processedContent.toString();
+    const contentHtml = processedContent.toString();
 
     const blogPostWithHTML: BlogPost & { contentHtml: string } = {
         id,

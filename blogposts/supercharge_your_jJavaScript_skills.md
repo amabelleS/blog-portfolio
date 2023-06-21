@@ -5,9 +5,7 @@ date: "2023-06-23"
 
 <!-- # Supercharge Your JavaScript Skills: Discover structuredClone(), array.at(), and the Change Array by Copy Proposal -->
 
-# **Introduction**
-
-<pre><code className="language-js">console.log("1. Hello World")</code></pre>
+## **Introduction**
 
 ```javascript
 console.log("2. Hello World");
@@ -17,13 +15,9 @@ console.log("2. Hello World");
 console.log("3. Hello World");
 ```
 
-\`\`\`js
-console.log('4. css')
-\`\`\`
-
 JavaScript is a dynamic and ever-evolving language, constantly introducing new features to enhance developers’ productivity and expand the capabilities of the language. Staying up-to-date with these new features is essential for every JavaScript developer. In this article, we will dive into three exciting features: [structuredClone()](https://developer.mozilla.org/en-US/docs/Web/API/structuredClone), [array.at()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/at), and the [Change Array by Copy Proposal](https://github.com/tc39/proposal-change-array-by-copy), which is now in the finished stage (4).
 
-# **Background: The Evolution of ECMAScript and the TC39 Process**
+## **Background: The Evolution of ECMAScript and the TC39 Process**
 
 ECMA TC39 is the governing body responsible for evolving the ECMAScript (JavaScript) standard. With contributions from volunteers representing various companies and organizations, TC39 follows a rigorous process to introduce new language features. Proposals undergo thorough discussions and evaluations before progressing through multiple stages. Upon reaching stage 4, a proposal achieves completion and official standardization. These finalized features are published on [TC39’s GitHub repository](https://github.com/tc39/ecma262), ensuring transparency and accessibility for developers worldwide.
 
@@ -31,45 +25,13 @@ The **`array.at()`** method was introduced in 2015 and the **`structuredClone
 
 The upcoming 2023 edition holds even more promises, including the introduction of **`array.with()`** and other methods from the transformative ‘Change Array by Copy’ proposal, along with an array of other exhilarating new features and notable improvements.
 
-# **structuredClone(): Deep Cloning Made Easy!**
+## **structuredClone(): Deep Cloning Made Easy!**
 
 Introduced in ECMAScript 2015 (ES6), the `structuredClone()` method provides a convenient way to clone JavaScript objects. This method can be used to create a deep copy of an object, including its properties and methods, without any shared references to the original object's properties or values. This feature is particularly useful when dealing with complex data types like arrays, objects, Maps, and Sets, or for cloning objects that are not serializable, such as DOM elements, IndexedDB objects, and other complex data structures.
 
 🪄No more deep cloning by non-native methods in JavaScript likeJSON.parse(JSON.stringify(object)) or Lodash cloneDeep()🏅
 
 Here’s an example of using **structuredClone()**:
-
-<pre>
-  <code className="language-javascript">
-    // With an object:
-const originalObject = {
-  name: 'John Doe',
-  age: 30,
-  address: {
-    street: '123 Main St',
-    city: 'Anytown',
-    state: 'CA'
-  },
-  hobbies: ['reading', 'traveling', 'photography']
-};
-
-const clonedObject = structuredClone(originalObject);
-
-// With an array:
-const mushrooms1 = {
-  amanita: ["muscaria", "virosa"],
-};
-
-const mushrooms2 = structuredClone(mushrooms1);
-
-mushrooms2.amanita.push("pantherina");
-mushrooms1.amanita.pop();
-
-console.log(mushrooms2.amanita); // ["muscaria", "virosa", "pantherina"]
-console.log(mushrooms1.amanita); // ["muscaria"]
-
-  </code>
-</pre>
 
 ```js
 // With an object:
@@ -100,11 +62,11 @@ console.log(mushrooms2.amanita); // ["muscaria", "virosa", "pantherina"]
 console.log(mushrooms1.amanita); // ["muscaria"]
 ```
 
-## **Browser Support:**
+### **Browser Support:**
 
 The `structuredClone()` method is available in Node.js v16.8.0 and above. It is also available in browsers such as Firefox, Chrome, Edge, and Safari. However, it is not available in Internet Explorer or Opera Mini.
 
-# **`array.at():` Access Array Elements with Ease**
+## **`array.at():` Access Array Elements with Ease**
 
 The [array.at()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/at) method was added to JavaScript in ECMAScript 2022, in Array, String, and TypedArray. Answering a long-time request from users🥳 you can now access array elements more conveniently and handle edge cases effortlessly.
 
@@ -131,11 +93,11 @@ const atWay = colors.at(-2);
 console.log(atWay); // 'green'
 ```
 
-## **Browser Support:**
+### **Browser Support:**
 
 The `array.at()` method is available in Node.js v15.0.0 and above, as well as in browsers such as Firefox, Chrome, Edge, and Safari. However, it is not available in Internet Explorer or Opera Mini.
 
-# **Change Array by Copy Proposal: Revolutionizing Array Manipulation**
+## **Change Array by Copy Proposal: Revolutionizing Array Manipulation**
 
 The [Change Array by Copy Proposal](https://github.com/tc39/proposal-change-array-by-copy) is currently under consideration by the TC39 committee. It aims to enhance JavaScript arrays by introducing several methods that enable modifying arrays by returning copies, leaving the original array untouched. The proposed methods include:
 
@@ -153,15 +115,18 @@ const arr = [3, 1, 4, 2, 5];
 
 const reversed = arr.toReversed();
 console.log(reversed); // Output: [5, 2, 4, 1, 3]
+
 const sorted = arr.toSorted();
 console.log(sorted); // Output: [1, 2, 3, 4, 5]
+
 const spliced = arr.toSpliced(1, 2, "a", "b");
 console.log(spliced); // Output: [3, 'a', 'b', 5]
+
 const updated = arr.with(2, "c");
 console.log(updated); // Output: [3, 1, 'c', 2, 5]
 ```
 
-## **Browser Support:**
+### **Browser Support:**
 
 **Chrome/V8**: The methods are shipping unflagged since Chrome 110. This means that they are available in Chrome browsers without the need for additional configuration or flags, starting from the mentioned Chrome version.
 
@@ -171,7 +136,7 @@ console.log(updated); // Output: [3, 1, 'c', 2, 5]
 
 **Firefox/SpiderMonkey**: The methods are currently flagged.
 
-# **Conclusion**
+## **Conclusion**
 
 JavaScript is an incredibly powerful programming language, and the addition of features and updates only adds to its versatility and functionality. In this article, we dived into some new exciting JavaScript features: `structuredClone()`, `array.at()`, `array.toReversed()`, `array.toSorted()`, `array.toSpliced()`, and `array.with()`.
 
@@ -179,7 +144,7 @@ By leveraging these features and staying up-to-date with new JavaScript advancem
 
 Happy coding!
 
-# **Additional Resources**
+## **Additional Resources**
 
 - **[ECMAScript Proposal Process](https://tc39.es/process-document/)**
 - **[MDN Web Docs: structuredClone()](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm)**

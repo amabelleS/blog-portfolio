@@ -3,9 +3,10 @@
 import getFormattedDate from "@/lib/getFormattedDate"
 import { getSortedPostsData, getPostData } from "@/lib/posts"
 import { notFound } from "next/navigation"
-import Link from "next/link"
+// import Link from "next/link"
 import PostContent from "@/app/components/posts/PostContent"
-import markdownToHtml from "@/lib/markdownToHtml"
+// import markdownToHtml from "@/lib/markdownToHtml"
+import "prismjs/themes/prism-tomorrow.css";
 // import Prism from "prismjs";
 // import dynamic from "next/dynamic";
 // import PrismJsx from  "prismjs/components/prism-jsx";
@@ -44,10 +45,10 @@ export function generateMetadata({ params }: { params: { postId: string } }) {
 
 export default async function Post({ params }: { params: { postId: string } }) {
 
-    const posts = getSortedPostsData()
+    // const posts = getSortedPostsData()
     const { postId } = params
 
-    if (!posts.find(post => post.id === postId)) notFound()
+    // if (!posts.find(post => post.id === postId)) notFound()
 
     const { title, date, contentHtml } = await getPostData(postId)
     

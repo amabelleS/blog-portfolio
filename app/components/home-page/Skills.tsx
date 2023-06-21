@@ -11,10 +11,7 @@ export default function Skills({}: Props) {
         </div>
         <div className='flex justify-around items-center text-center'>
         {/* <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 text-center'> */}
-            {/* <div className='p-4 mx-auto'>
-                <FaReact className='text-6xl mx-auto bg-black'/>
-            </div> */}
-            <div className='mx-auto bg-purple-300'>
+            {/* <div className='mx-auto bg-purple-300'>
                 <Image
                     src="https://upload.wikimedia.org/wikipedia/commons/6/61/Wikinews-science.svg"
                     width={88}
@@ -23,7 +20,7 @@ export default function Skills({}: Props) {
                     className='p-4 mx-auto'
                     alt="react logo"
                 />
-            </div>
+            </div> */}
             <div className='p-4 mx-auto'>
                 <Image
                     src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
@@ -46,18 +43,18 @@ export default function Skills({}: Props) {
                     src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                     width={88}
                     height={77}
-                    className='p-2 mx-auto'
+                    // className='p-2'
                     alt="nodejs logo"
                 />
             </div>
-            <div className='p-4 mx-auto  bg-purple-300'>
+            {/* <div className='p-4 mx-auto  bg-purple-300'>
                 <Image
                     src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
                     width={88}
                     height={77}
                     alt="Naxtjs logo"
                 />
-            </div>
+            </div> */}
             <div className='p-4 mx-auto'>
                 <Image
                     src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
