@@ -1,20 +1,12 @@
-// import headerNavLinks from '@/data/headerNavLinks'
-import classNames from 'classnames'
+import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import Link from 'next/link'
-// import { useRouter } from 'next/router'
+import NAV_ITEMS  from '@/data/NAV_ITEMS'
 import { usePathname } from 'next/navigation'
-import { useEffect, useState } from 'react'
 
 const MobileNav = () => {
-  // const router = useRouter()
   const pathname = usePathname()
   const [navShow, setNavShow] = useState(false)
-
-  const navLinks = [
-    {name: 'Posts', href: '/posts'},
-    {name: 'Contact', href: '/contact'}
-]
 
   const variants = {
     enter: { opacity: 1, x: 0 },
@@ -59,9 +51,7 @@ const MobileNav = () => {
           initial="exit"
           exit="exit"
           variants={variants}
-          className={classNames(
-            'fixed inset-0 z-20 h-full w-full bg-white opacity-95 dark:bg-black'
-          )}
+          className='fixed inset-0 z-20 h-full w-full bg-white opacity-95 dark:bg-black'
         >
           <header className="flex justify-end py-5 px-4">
             <button
@@ -89,15 +79,12 @@ const MobileNav = () => {
               <Link
                 href="/"
                 onClick={() => setNavShow(!navShow)}
-                className={classNames(
-                  'horizontal-underline font-bold tracking-widest text-gray-900 backdrop:text-2xl dark:text-gray-100',
-                  { 'horizontal-underline-active': pathname === '/' }
-                )}
+                className={`relative text-xl hover:no-underline after:absolute after:left-0 after:-bottom-[3px] after:h-[2px] after:w-0 after:bg-current after:transition-width after:duration-300 after:ease-in-out hover:after:w-full ${pathname === '/' ? 'text-[#7929b9]' : ''}`}
               >
                 Home
               </Link>
             </div>
-            {navLinks.map(({ name, href }) => {
+            {NAV_ITEMS.map(({ name, href }) => {
               const active = pathname.includes(href)
 
               return (
@@ -105,10 +92,7 @@ const MobileNav = () => {
                   <Link
                     href={href}
                     onClick={() => setNavShow(!navShow)}
-                    className={classNames(
-                      'horizontal-underline font-bold tracking-widest text-gray-900 backdrop:text-2xl dark:text-gray-100',
-                      { 'horizontal-underline-active': active }
-                    )}
+                    className={`relative text-xl hover:no-underline after:absolute after:left-0 after:-bottom-[3px] after:h-[2px] after:w-0 after:bg-current after:transition-width after:duration-300 after:ease-in-out hover:after:w-full ${active ? 'text-[#7929b9]' : ''}`}
                     aria-label={name}
                   >
                     {name}

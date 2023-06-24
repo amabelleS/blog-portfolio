@@ -6,29 +6,30 @@ import Image from 'next/image'
 import contactMe from './ContactMe.png'
 import { motion, useCycle } from 'framer-motion';
 import { navVariants } from "@/lib/motion";
+import navLinks from '@/data/navLinks'
+import NAV_ITEMS  from '@/data/NAV_ITEMS'
 import Logo from "./Logo"
 import menu from "./menu.svg"
 import { FaGithub, FaLinkedin, FaMailchimp } from 'react-icons/fa';
-// import { GithubIcon } from './icons.js';
-// import search from "./search.svg"
-import CommandPalette from '../CommandPalette/CommandPalette';
+// import { useTheme } from "next-themes"
+// import { RiMoonFill, RiSunLine } from "react-icons/ri"
+// import { IoMdMenu, IoMdClose } from "react-icons/io"
 import MobileNav from './MobileNav'
+
 import styles from '../../styles/index.js';
 
 const Navbar = () => {
     const pathname = usePathname()
+    // const { systemTheme, theme, setTheme } = useTheme()
+    // const currentTheme = theme === "system" ? systemTheme : theme
     const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-    const navLinks = [
-        {name: 'Posts', href: '/posts'},
-        {name: 'Contact', href: '/contact'}
-    ]
 
     return (
     <motion.nav
         variants={navVariants}
         initial="hidden"
         whileInView="show"
+        // className={`w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600"`}
         className={`${styles.xPaddings} mx-auto max-w-7xl px-2 sm:px-6 lg:px-8`}
     >
         {/* <div className="absolute w-[50%] inset-0 gradient-01" /> */}
@@ -64,7 +65,7 @@ const Navbar = () => {
         </div> */}
         {/* <ul className='flex flex-row justify-between'> */}
         <ul className="hidden space-x-2 md:h-auto md:flex gap-8">
-            {navLinks.map((link) => (
+            {NAV_ITEMS.map((link) => (
             <li key={link.name}>
                 <Link 
                     href={link.href}

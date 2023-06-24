@@ -21,6 +21,7 @@
     "framer-motion": "^10.12.16",
     "gray-matter": "^4.0.3",
     "next": "^13.4.6",
+    "next-themes": "^0.2.1",
     "postcss": "8.4.24",
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
