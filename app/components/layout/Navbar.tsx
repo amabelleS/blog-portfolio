@@ -1,15 +1,15 @@
 'use client';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { usePathname } from 'next/navigation'
-import Image from 'next/image'
-import contactMe from './ContactMe.png'
-import { motion, useCycle } from 'framer-motion';
+// import Image from 'next/image'
+// import contactMe from './ContactMe.png'
+import { motion } from 'framer-motion';
 import { navVariants } from "@/lib/motion";
-import navLinks from '@/data/navLinks'
+// import navLinks from '@/data/navLinks'
 import NAV_ITEMS  from '@/data/NAV_ITEMS'
 import Logo from "./Logo"
-import menu from "./menu.svg"
+// import menu from "./menu.svg"
 import { FaGithub, FaLinkedin, FaMailchimp } from 'react-icons/fa';
 // import { useTheme } from "next-themes"
 // import { RiMoonFill, RiSunLine } from "react-icons/ri"

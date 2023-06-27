@@ -10,7 +10,7 @@ function Hero({}: Props) {
   return (
     <section 
       // className='mt-24 mb-24 bg-slate-200'
-      className='mt-24 mb-24'>
+      className='mt-6 mb-6'>
         <PracticlesBG />
         <div className="content flex mx-auto max-w-2xl py-16 px-4 text-center sm:py-20 sm:px-6 lg:px-8">
         <motion.div 
@@ -28,7 +28,8 @@ function Hero({}: Props) {
         transition={{ duration: 1 }}>
             Hello and Welcome 👋&nbsp;
             <span className="whitespace-nowrap">
-            I&apos;m <span className="font-bold">Amabelle</span>.
+            I'm <span className="font-bold">Amabelle</span>.
+            {/* I&apos;m <span className="font-bold">Amabelle</span>. */}
             </span> 
         </motion.p>
         </div>

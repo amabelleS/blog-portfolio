@@ -1,9 +1,8 @@
-'use client'
 import './globals.css'
 import { Inter } from 'next/font/google'
-import NavbarOne from './components/layout/NavbarOne'
+// import NavbarOne from './components/layout/NavbarOne'
 import Navbar from './components/layout/Navbar'
-import { ThemeProvider } from "next-themes"
+// import { ThemeProvider } from "next-themes"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,14 +19,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="dark:bg-slate-800">
+      <body className="dark:bg-slate-800 bg-black text-slate-100">
       {/* <body className="dark:bg-stone-900"> */}
       {/* <body className={inter.className}> */}
         {/* <NavbarOne /> */}
-        <ThemeProvider enableSystem={true} attribute="class">
+        {/* <ThemeProvider enableSystem={true} attribute="class"> */}
         <Navbar />
+        <main>
         {children}
-        </ThemeProvider>
+        </main>
+        {/* </ThemeProvider> */}
       </body>
     </html>
   )

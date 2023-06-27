@@ -1,5 +1,6 @@
 import Link from "next/link"
 import getFormattedDate from "@/lib/getFormattedDate"
+import { BlogPost } from "@/lib/types"
 
 type Props = {
     post: BlogPost

@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { IconType } from "react-icons";
 
-type BlogPost = {
+export type BlogPost = {
     id: string,
     title: string,
     date: string,
