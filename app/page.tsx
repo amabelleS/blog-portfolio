@@ -13,7 +13,6 @@ export default function Home() {
   return (
     <div className="mx-auto">
     {/* <div className="flex min-h-screen flex-col items-center justify-between mx-auto"> */}
-    {/* <main className="flex min-h-screen flex-col items-center justify-between px-6 mb-4 mx-auto"> */}
       <Hero/>
       <About/>
       <Skills/>

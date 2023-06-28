@@ -11,17 +11,12 @@ import NAV_ITEMS  from '@/data/NAV_ITEMS'
 import Logo from "./Logo"
 // import menu from "./menu.svg"
 import { FaGithub, FaLinkedin, FaMailchimp } from 'react-icons/fa';
-// import { useTheme } from "next-themes"
-// import { RiMoonFill, RiSunLine } from "react-icons/ri"
-// import { IoMdMenu, IoMdClose } from "react-icons/io"
 import MobileNav from './MobileNav'
 
 import styles from '../../styles/index.js';
 
 const Navbar = () => {
     const pathname = usePathname()
-    // const { systemTheme, theme, setTheme } = useTheme()
-    // const currentTheme = theme === "system" ? systemTheme : theme
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return (

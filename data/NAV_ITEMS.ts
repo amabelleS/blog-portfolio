@@ -4,7 +4,8 @@ interface NavItem {
   }
   
   const NAV_ITEMS: Array<NavItem> = [
-    {name: 'Blog', href: '/posts'},
+    // {name: 'Blog', href: '/posts'},
+    {name: 'Blog', href: '/blog'},
     {name: 'Projects', href: '/projects'},
     {name: 'Contact', href: '/contact'}
   ]

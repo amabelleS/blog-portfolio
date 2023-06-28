@@ -28,7 +28,7 @@ const FeaturedProject = ({title, type, summery, img, link, github}: FeaturedProj
     <article className='w-full flex items-center justify-between rounded-lg border border-solid border-lime-200 bg-dark shadow-2xl p-12 relative'>
       {/* <div className='absolute top-o -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-lime-400 rounded-br-3xl'/> */}
       <Link className='x-1/2 cursor-pointer overflow-hidden rounded-lg' href={link}>
-        <Image src={demoPic} alt={title} width={166} height={166} className="w-full h-auto  hover:motion-safe:animate-wiggle" />
+        <Image src={demoPic} alt={title} width={166} height={166} className="w-full h-auto  hover:motion-safe:animate-pulse" />
         {/* <Image src={demoPic} alt={title} width={300} height={300} className="rounded-full mx-auto hover:motion-safe:animate-wiggle" /> */}
       </Link>
       <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
@@ -55,7 +55,7 @@ const Project = ({title, type, img, link, github}: Project) => {
     <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-lime-200 p-6 relative'>
       {/* <div className='absolute top-o -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-lime-400'/> */}
       <Link className='x-full cursor-pointer overflow-hidden rounded-lg' href={link}>
-        <Image src={demoPic} alt={title} width={166} height={166} className="w-full h-auto  hover:motion-safe:animate-wiggle" />
+        <Image src={demoPic} alt={title} width={166} height={166} className="w-full h-auto  hover:motion-safe:animate-pulse" />
         {/* <Image src={demoPic} alt={title} width={300} height={300} className="rounded-full mx-auto hover:motion-safe:animate-wiggle" /> */}
       </Link>
       <div className='w-full flex flex-col items-start justify-between mt-4'>
@@ -78,10 +78,10 @@ const Project = ({title, type, img, link, github}: Project) => {
 
 const Projects = () => {
   return (
-    <div className="mx-auto px-24">
-      <h2 className="text-5xl mb-6 text-center font-bold dark:text-white/90">Projects</h2>
-      <AnimatedText text="Project 1 Lorem ipsum dolor adipisicing elit." className='!text-2xl mb-12' />
-      <div className='grid grid-col-12 gap-24 gap-y-32'>
+    <div className="mx-auto py-4">
+      <h2 className="text-4xl md:text-5xl mb-6 text-center font-bold dark:text-white/90">Projects</h2>
+      <AnimatedText text="Unlock the power of imagination and innovation to create a world where possibilities are limitless." className='mb-12' />
+      <div className='grid grid-cols-12 gap-24 gap-y-32'>
         <div className='col-span-12'>
           <FeaturedProject
             title='Project 1'

@@ -38,11 +38,10 @@ function Experience({}: Props) {
     )
 
   return (
-    <section className="mt-24 mb-24 mx-auto max-w-2xl">
+    <section className="mt-16 mb-24 mx-auto max-w-2xl">
     {/* <div className='w-full bg-slate-200'> */}
         <h2 className="text-5xl mb-6 text-center font-bold dark:text-white/90">Experience</h2>
-      <div ref={ref} className='w-[75%] mx-auto relative'>
-
+      <div ref={ref} className='w-[90%] lg:w-[75%] mx-auto relative'>
         <motion.div
             style={{ scaleY: scrollYProgress }}
             className='absolute left-9 top-0 w-[4px] h-full origin-top bg-lime-200' />

@@ -8,10 +8,7 @@ function About() {
   return (
     <section className='mb-12'>
         <div className="mx-auto max-w-2xl">
-        {/* <p className="mt-12 mb-12 text-3xl text-center dark:text-white/90">
-            I&apos;m a <span className="font-bold">Software Engineer</span> based in the Philippines. I&apos;m passionate about building software that helps people.  I&apos;m currently working at <a href="https://www.affinityx.com/" target="_blank" rel="noreferrer" className="font-bold">AffinityX</a> as a <span className="font-bold">Senior Software Engineer</span>. I&apos;m also a <span className="font-bold">Google Developer Expert</span> for <span className="font-bold">Web Technologies</span>.
-        </p> */}
-        <p className="text-3xl text-center dark:text-white/90"
+        <p className=" font-semibold sm:text-2xl md:text-3xl text-center px-8 lg:px-0"
         >
             {/* Animate the about text */}
            {ABOUT_TEXT.split('').map((char, index) => {
@@ -20,7 +17,7 @@ function About() {
                      key={char + "-" + index}
                      initial={{ opacity: 0 }}
                      animate={{ opacity: 1 }}
-                     transition={{ duration: 1, delay: index * 0.05 }}
+                     transition={{ duration: 1, delay: index * 0.023 }}
                      >
                           {char}
                      </motion.span>
