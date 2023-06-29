@@ -1,117 +1,63 @@
+'use client'
+
 import React from 'react'
 import AnimatedText from '../components/uiElements/AnimatedText'
-import { type } from 'os'
-import Link from 'next/link'
-import Image from 'next/image'
-import demoPic from './flying-house.png'
-import { FaGithub } from 'react-icons/fa';
+import Project from './components/Project'
+import FeaturedProject from './components/FeaturedProject'
+import { motion } from 'framer-motion'
+import projects from '@/data/projects'
 
-type Project = {
-  title: string,
-  type: string,
-  summery?: string,
-  img: string,
-  link: string,
-  github: string,
-}
-type FeaturedProjectsProps = {
-  title: string,
-  type: string,
-  summery: string,
-  img: string,
-  link: string,
-  github: string,
-}
-
-const FeaturedProject = ({title, type, summery, img, link, github}: FeaturedProjectsProps) => {
-  return (
-    <article className='w-full flex items-center justify-between rounded-lg border border-solid border-lime-200 bg-dark shadow-2xl p-12 relative'>
-      {/* <div className='absolute top-o -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-lime-400 rounded-br-3xl'/> */}
-      <Link className='x-1/2 cursor-pointer overflow-hidden rounded-lg' href={link}>
-        <Image src={demoPic} alt={title} width={166} height={166} className="w-full h-auto  hover:motion-safe:animate-pulse" />
-        {/* <Image src={demoPic} alt={title} width={300} height={300} className="rounded-full mx-auto hover:motion-safe:animate-wiggle" /> */}
-      </Link>
-      <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
-        <span className='text-lime-400 font-medium text-xl'>{type}</span>
-        <Link href={link} target='_blank' className='hover:underline underline-offset-3'>
-          <h3 className='my-2 w-full text-left text-4xl font-bold '>{title}</h3>
-        </Link>
-        <p className='my-2 font-medium text-dark'>{summery}</p>
-        <div className='mt-2 flex items-center'>
-          <Link href={github} target='_blank' className='text-lime-600 w-24'>
-            <FaGithub size={42}/>
-          </Link>
-          <Link href={link} target='_blank' className='ml-full rounded bg-lime-600 p-2 px-6 text-lg font-semibold'>
-            Visit Project
-          </Link>
-        </div>
-      </div>
-    </article>
-  )
-}
-
-const Project = ({title, type, img, link, github}: Project) => {
-  return (
-    <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-lime-200 p-6 relative'>
-      {/* <div className='absolute top-o -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-lime-400'/> */}
-      <Link className='x-full cursor-pointer overflow-hidden rounded-lg' href={link}>
-        <Image src={demoPic} alt={title} width={166} height={166} className="w-full h-auto  hover:motion-safe:animate-pulse" />
-        {/* <Image src={demoPic} alt={title} width={300} height={300} className="rounded-full mx-auto hover:motion-safe:animate-wiggle" /> */}
-      </Link>
-      <div className='w-full flex flex-col items-start justify-between mt-4'>
-        <span className='text-lime-400 font-medium text-xl'>{type}</span>
-        <Link href={link} target='_blank' className='hover:underline underline-offset-3'>
-          <h3 className='my-2 w-full text-left text-3xl font-bold '>{title}</h3>
-        </Link>
-        <div className='w-full mt-2 flex items-center justify-between'>
-          <Link href={link} target='_blank' className='text-lg font-semibold underline'>
-            Visit
-          </Link>
-          <Link href={github} target='_blank' className='text-lime-600'>
-            <FaGithub size={23}/>
-          </Link>
-        </div>
-      </div>
-    </article>
-  )
-}
 
 const Projects = () => {
   return (
-    <div className="mx-auto py-4">
-      <h2 className="text-4xl md:text-5xl mb-6 text-center font-bold dark:text-white/90">Projects</h2>
-      <AnimatedText text="Unlock the power of imagination and innovation to create a world where possibilities are limitless." className='mb-12' />
-      <div className='grid grid-cols-12 gap-24 gap-y-32'>
+    <div className="mx-auto px-4">
+      <>
+        <motion.div className='fix top-0 buttom-0 right-full h-screem w-screen bg-teal-400 z-50'
+            initial={{ x: '100%', width: '100%' }}
+            animate={{ x: '0%', width: '0%', transition: { duration: 0.8, ease: 'easeInOut' }}}
+            // exit={{ x: '100%', width: '100%', transition: { duration: 0.5, ease: 'easeInOut' }}}
+        />      
+        <motion.div className='fix top-0 buttom-0 right-full h-screem w-screen bg-rose-400 z-40'
+            initial={{ x: '100%', width: '100%' }}
+            animate={{ x: '0%', width: '0%', transition: {delay: 0.2, duration: 0.8, ease: 'easeInOut' }}}
+            // exit={{ x: '100%', width: '100%', transition: { duration: 0.5, ease: 'easeInOut' }}}
+        />      
+        <motion.div className='fix top-0 buttom-0 right-full h-screem w-screen bg-lime-400 z-30'
+            initial={{ x: '100%', width: '100%' }}
+            animate={{ x: '0%', width: '0%', transition: { delay: 0.4, duration: 0.8, ease: 'easeInOut' }}}
+            // exit={{ x: '100%', width: '100%', transition: { duration: 0.5, ease: 'easeInOut' }}}
+        />      
+    </>
+      <h2 className="text-4xl md:text-5xl mb-6 text-center font-bold text-lime-200">Projects</h2>
+      <AnimatedText text="Unlock the power of imagination and innovation to create a world where possibilities are limitless." />
+      <div className='grid grid-cols-1 gap-y-24 gap-x-4 md:gap-x-8 xl:gap-24 xl:gap-y-32 p-16'>
         <div className='col-span-12'>
-          <FeaturedProject
-            title='Project 1'
-            type='Featured Project'
-            summery='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, tempora nisi assumenda natus alias odio fugit molestiae, laudantium quo illum culpa voluptatibus aut libero distinctio incidunt tenetur, temporibus architecto? Non..'
-            img='/images/cyber.png'
-            link='https://www.google.com'
-            github='https://www.google.com'
-          />
+          {projects.filter(project => project.isFeatured).map(project => {
+            return (
+              <FeaturedProject
+                key={project.id}
+                title={project.title}
+                summery={project.summery}
+                image_path={project.image_path}
+                deployed_url={project.deployed_url}
+                github_url={project.github_url}
+              />
+            )
+          })}
         </div>
-        <div className='col-span-6'>
-        <Project
-            title='Project 2'
-            type='Featured Project'
-            summery='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, tempora nisi assumenda natus alias odio fugit molestiae, laudantium quo illum culpa voluptatibus aut libero distinctio incidunt tenetur, temporibus architecto? Non..'
-            img='/images/cyber.png'
-            link='https://www.google.com'
-            github='https://www.google.com'
-          />
-        </div>
-        <div className='col-span-6'>
-        <Project
-            title='Project 3'
-            type='Featured Project'
-            summery='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, tempora nisi assumenda natus alias odio fugit molestiae, laudantium quo illum culpa voluptatibus aut libero distinctio incidunt tenetur, temporibus architecto? Non..'
-            img='/images/cyber.png'
-            link='https://www.google.com'
-            github='https://www.google.com'
-          />
-        </div>
+        {projects.filter(project => !project.isFeatured).map(project => {
+          return (
+            <div className='col-span-6' key={project.id}>
+              <Project
+                title={project.title}
+                summery={project.summery}
+                image_path={project.image_path}
+                deployed_url={project.deployed_url}
+                github_url={project.github_url}
+              />
+            </div>
+          )
+        })}
       </div>
     </div>
   )

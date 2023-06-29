@@ -5,6 +5,7 @@ import Skills from './components/home-page/Skills'
 import About from './components/home-page/About'
 import Experience from './components/home-page/Experience'
 import Education from './components/home-page/Education'
+// import TransitionEffect from './components/TransitionEffect'
 // import "prismjs/themes/prism-tomorrow.css";
 
 export const revalidate = 86400 // revalidate this page every 86400 seconds / 1 day
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <div className="mx-auto">
     {/* <div className="flex min-h-screen flex-col items-center justify-between mx-auto"> */}
+      {/* <TransitionEffect /> */}
       <Hero/>
       <About/>
       <Skills/>

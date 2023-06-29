@@ -8,7 +8,7 @@ function About() {
   return (
     <section className='mb-12'>
         <div className="mx-auto max-w-2xl">
-        <p className=" font-semibold sm:text-2xl md:text-3xl text-center px-8 lg:px-0"
+        <p className=" font-semibold sm:text-2xl md:text-3xl text-center px-8 lg:px-0 text-lime-50"
         >
             {/* Animate the about text */}
            {ABOUT_TEXT.split('').map((char, index) => {

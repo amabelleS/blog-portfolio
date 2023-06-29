@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 // import NavbarOne from './components/layout/NavbarOne'
 import Navbar from './components/layout/Navbar'
+// import TransitionEffect from './components/TransitionEffect'
 // import { ThemeProvider } from "next-themes"
 
 const inter = Inter({ subsets: ['latin'] })
@@ -26,6 +27,7 @@ export default function RootLayout({
         {/* <ThemeProvider enableSystem={true} attribute="class"> */}
         <Navbar />
         <main>
+        {/* <TransitionEffect /> */}
         {children}
         </main>
         {/* </ThemeProvider> */}

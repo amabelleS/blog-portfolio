@@ -4,9 +4,10 @@ type Props = {}
 
 export default function Skills({}: Props) {
   return (
-    <div className='w-full bg-white'>
+    <div className='w-full h-full bg-gradient-to-r from-yellow-200 via-pink-200 to-pink-400'>
+    {/* <div className='w-full h-full bg-gradient-to-r from-green-300 to-purple-400'> */}
         <div className="text-3xl text-center font-bold text-dark dark:text-black/90 pt-10 pb-10">
-            Skills
+            Tech Stack
         </div>
         <div className='flex justify-around items-center text-center'>
         {/* <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 text-center'> */}

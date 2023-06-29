@@ -30,7 +30,7 @@ function Hero({}: Props) {
           />
         </motion.div>
         <motion.p 
-        className="item-body m-16 mb-0 text-3xl text-center dark:text-white/90"
+        className="item-body mt-12 sm:ml-8 sm:mt-0 text-3xl text-center  text-lime-300"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1.2}}
         transition={{ duration: 1 }}>
