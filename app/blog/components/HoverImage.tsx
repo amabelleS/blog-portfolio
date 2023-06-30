@@ -22,7 +22,7 @@ const HoverImage = ({title, img, link}: Props) => {
 
     const imgRef = useRef(null)
 
-    const handleMouseEnter = (e) => {
+    const handleMouseEnter = (e: any) => {
         if (imgRef.current) {
             imgRef.current.style.display = 'inline-block'
             // x.set(e.pageX - imgRef.current.offsetLeft - imgRef.current.offsetWidth / 2)
@@ -37,7 +37,7 @@ const HoverImage = ({title, img, link}: Props) => {
         
     }
 
-    const handleMouseLeave = (e) => {
+    const handleMouseLeave = (e: any) => {
         if (imgRef.current) {
             imgRef.current.style.display = 'none'
             // x.set(e.pageX - imgRef.current.offsetLeft - imgRef.current.offsetWidth / 2)

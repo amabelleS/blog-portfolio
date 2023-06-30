@@ -1,20 +1,21 @@
 import Link from "next/link"
 import Image from "next/image"
+import { FiExternalLink } from 'react-icons/fi';
 
 type FeaturedArticleProps = {
-    img: string,
+    image_url: string,
     title: string,
-    time: string,
+    date: string,
     summery: string,
     link: string,
 }
 
-const FeaturedArticle = ({img, title, time, summery, link}: FeaturedArticleProps) => {
+const FeaturedArticle = ({image_url, title, date, summery, link}: FeaturedArticleProps) => {
   return (
-    <li className="col-span-1 w-full p-4 bg-stone-900 border-solid border-lime-100 border-8 border-l-[1px] border-t-[1px] border-e-rose-900 border-s-2 rounded-2xl text-lime-600">
+    <li className="col-span-1 flex flex-col justify-between w-full p-4 bg-stone-900 border-solid border-lime-100 border-8 border-l-[1px] border-t-[1px] border-e-rose-900 border-s-2 rounded-2xl text-lime-600">
             <Link className='x-full cursor-pointer overflow-hidden' href={link}>
                 <Image 
-                    src={img} 
+                    src={image_url} 
                     alt={title} 
                     width={123} height={123} 
                     priority={true}
@@ -26,7 +27,12 @@ const FeaturedArticle = ({img, title, time, summery, link}: FeaturedArticleProps
                 <h3 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline">{title}</h3>
             </Link>
             <p className="text-sm mb-2">{summery}</p>
-            <span className="text-sm font-semibold text-teal-600">{time}</span>
+            <div className='mt-2 flex justify-between items-center'>
+                <span className="text-sm font-semibold text-teal-600">{date}</span>
+                <Link href={link} target='_blank' className='text-lime-600'>
+                <FiExternalLink size={36}/>
+                </Link>
+            </div>
         </li>
   )
 }

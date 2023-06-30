@@ -13,9 +13,10 @@ type Project = {
     github_url: string,
   }
 
-const Project = ({title, type, image_path, deployed_url, github_url}: Project) => {
+const Project = ({title, summery, type, image_path, deployed_url, github_url}: Project) => {
     return (
-      <article className='w-full h-full flex flex-col items-center justify-center border-solid border-lime-200 border-8 border-l-[1px] border-t-[1px] border-e-teal-900 border-s-2 rounded-2xl p-6 relative'>
+      <article className='w-full h-full flex flex-col items-center justify-center border-solid border-lime-200 border-8 border-l-[1px] border-t-[1px] border-e-teal-900 border-s-2 rounded-2xl p-6 relative'
+      title={summery}>
         {/* <div className='absolute top-o -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-lime-400'/> */}
         <Link className='x-full cursor-pointer overflow-hidden rounded-lg' href={deployed_url}>
           <Image src={image_path} alt={title} width={166} height={166} className="w-full h-auto  hover:motion-safe:animate-pulse" />
