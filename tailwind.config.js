@@ -15,6 +15,9 @@ module.exports = {
       colors: {
         'primary-black': '#1A232E',
         'secondary-white': '#c7c7c7',
+        // 'strawberry-gradient-hover': 'bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400',
+        // 'strawberry-gradient': 'bg-gradient-to-r from-yellow-200 via-pink-200 to-pink-400',
+        // 'teal-to-lime': 'bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700',
       },
       animation: {
         'spin-slow': 'spin 3s linear infinite',

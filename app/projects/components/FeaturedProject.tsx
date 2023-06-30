@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import demoPic from './flying-house.png'
+// import demoPic from './flying-house.png'
+// import jsSnippets from './my-js-snippets.png'
 import { FaGithub } from 'react-icons/fa';
 
 type FeaturedProjectsProps = {
@@ -14,10 +15,10 @@ type FeaturedProjectsProps = {
 
 const FeaturedProject = ({title, type, summery, image_path, deployed_url, github_url}: FeaturedProjectsProps) => {
     return (
-      <article className='w-full flex flex-col md:flex-row items-center justify-between border-solid border-lime-200 border-8 border-l-[1px] border-t-[1px] border-e-teal-900 border-s-2 rounded-2xl bg-dark shadow-2xl p-12 relative'>
+      <article className='w-full flex flex-col md:flex-row items-center justify-between border-solid border-lime-200 border-8 border-l-[1px] border-t-[1px] border-e-teal-900 border-s-2 rounded-2xl shadow-2xl p-12 relative'>
         {/* <div className='absolute top-o -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-lime-400 rounded-br-3xl'/> */}
         <Link className='x-1/2 cursor-pointer overflow-hidden rounded-lg' href={deployed_url}>
-          <Image src={demoPic} alt={title} width={166} height={166} className="w-full h-auto  hover:motion-safe:animate-pulse" />
+          <Image src={image_path} alt={title} width={166} height={166} className="w-full h-auto  hover:motion-safe:animate-pulse" />
           {/* <Image src={demoPic} alt={title} width={300} height={300} className="rounded-full mx-auto hover:motion-safe:animate-wiggle" /> */}
         </Link>
         <div className='w-full lg:w-1/2 flex flex-col items-center md:items-start justify-between pt-6 md:pt-0 md:pl-8'>
