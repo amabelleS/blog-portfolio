@@ -7,7 +7,7 @@ interface NavItem {
     // {name: 'Blog', href: '/posts'},
     {name: 'Blog', href: '/blog'},
     {name: 'Projects', href: '/projects'},
-    {name: 'Contact', href: '/contact'}
+    // {name: 'Contact', href: '/contact'}
   ]
 
 export default NAV_ITEMS

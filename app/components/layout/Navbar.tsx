@@ -2,11 +2,9 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation'
-// import Image from 'next/image'
 // import contactMe from './ContactMe.png'
 import { motion } from 'framer-motion';
 import { navVariants } from "@/lib/motion";
-// import navLinks from '@/data/navLinks'
 import NAV_ITEMS  from '@/data/NAV_ITEMS'
 import Logo from "./Logo"
 // import menu from "./menu.svg"
@@ -17,7 +15,6 @@ import styles from '../../styles/index.js';
 
 const Navbar = () => {
     const pathname = usePathname()
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return (
     <motion.nav
@@ -70,24 +67,19 @@ const Navbar = () => {
             </li>
             ))}
         </ul>
+        {/* mobile */}
         <div className="flex items-center">
-                <MobileNav />
-            </div>
-        {/* </ul> */}
-        {/* <h2 className="font-extrabold text-[24px] leading-[30.24px] text-white"> */}
+            <MobileNav />
+        </div>
+        {/* home logo */}
         <Link href='/' className="font-extrabold text-[24px] leading-[30.24px] pt-2 hover:scale-125 transition ease-in-out duration-300">
             <Logo />
         </Link>
-        {/* </h2> */}
-        {/* <Image
-            src={menu}
-            alt="menu"
-            className="w-[24px] h-[24px] object-contain"
-        /> */}
+        {/* socials */}
         <div className="hidden md:flex md:items-center md:space-x-6">
-            <Link href="https://github.com/amabelleS" target="_blank" rel="noopener noreferrer" className='hover:scale-150 transition ease-in-out duration-300'><FaGithub/></Link>
-            <Link href="https://www.linkedin.com/in/amabelle-trachtenberg" target="_blank" rel="noopener noreferrer" className='hover:scale-150 transition ease-in-out duration-300'><FaLinkedin/></Link>
-            <Link href="/" target="_blank" rel="noopener noreferrer" className='hover:scale-150 transition ease-in-out duration-300'><FaMailchimp/></Link>
+            <Link href="https://github.com/amabelleS" target="_blank" rel="noopener noreferrer" className='hover:scale-150 transition ease-in-out duration-300 hover:text-[#7929b9]'><FaGithub size={23}/></Link>
+            <Link href="https://www.linkedin.com/in/amabelle-trachtenberg" target="_blank" rel="noopener noreferrer" className='hover:scale-150 transition ease-in-out duration-300 hover:text-[#7929b9]'><FaLinkedin size={23}/></Link>
+            <Link href="mailto:amabelledev@gmail.com?subject=Hello!&body=Email from my portfolio:" target="_blank" rel="noopener noreferrer" className='hover:scale-150 transition ease-in-out duration-300 hover:text-[#7929b9]'><FaMailchimp size={23}/></Link>
         </div>
         
         </div>

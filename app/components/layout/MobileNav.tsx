@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import Link from 'next/link'
 import NAV_ITEMS  from '@/data/NAV_ITEMS'
 import { usePathname } from 'next/navigation'
+import { FaGithub, FaLinkedin, FaMailchimp } from 'react-icons/fa';
 
 const MobileNav = () => {
   const pathname = usePathname()
@@ -74,7 +75,8 @@ const MobileNav = () => {
               </svg>
             </button>
           </header>
-          <nav className="fixed mt-8 h-full">
+          <div className="flex justify-between">
+          <nav className=" mt-8 h-full">
             <div key="Home" className="px-12 py-4">
               <Link
                 href="/"
@@ -101,6 +103,12 @@ const MobileNav = () => {
               )
             })}
           </nav>
+          <div className="mr-24 mt-10 md:hidden flex flex-col justify-around space-y-3">
+            <Link href="https://github.com/amabelleS" target="_blank" rel="noopener noreferrer" className='hover:text-[#7929b9]'><FaGithub size={28}/></Link>
+            <Link href="https://www.linkedin.com/in/amabelle-trachtenberg" target="_blank" rel="noopener noreferrer" className='hover:text-[#7929b9]'><FaLinkedin size={28}/></Link>
+            <Link href="mailto:amabelledev@gmail.com?subject=Hello!&body=Email from my portfolio:" target="_blank" rel="noopener noreferrer" className='hover:text-[#7929b9]'><FaMailchimp size={28}/></Link>
+          </div>
+          </div>
         </motion.div>
       </AnimatePresence>
     </div>

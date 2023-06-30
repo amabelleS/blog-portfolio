@@ -7,7 +7,7 @@ import Link from "next/link"
 
 type Props = {
     title: string,
-    img: string,
+    img: string | undefined,
     link: string,
 }
 

@@ -64,7 +64,24 @@ export default function Blog() {
             </ul>
             <h2 className="text-4xl my-16 w-full mt-32 text-center font-bold dark:text-lime-100">All Articles</h2>
             <ul className="w-full ">
-                <Article 
+                {blogData.filter((article) => !article.isFeatured).map((article) => {
+                    return (
+                        <Article
+                            key={article.id}
+                            image_url={article.image_url}
+                            title={article.title}
+                            date={article.date}
+                            link={article.link}
+                        />
+                    )
+                })}
+                {/* <Article 
+                    image_url='https://i.imgur.com/kqunkCm.png'
+                    title="lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    date="Jan 1, 2021"
+                    link="https://medium.com/@amabelletr/supercharge-your-javascript-skills-discover-structuredclone-array-at-2094ba48fdd6"
+                /> */}
+                {/* <Article 
                     img={books.src}
                     title="The 5 Best Books I Read in 2020"
                     date="Jan 1, 2021"
@@ -81,7 +98,7 @@ export default function Blog() {
                     title="The 5 Best Books I Read in 2020"
                     date="Jan 1, 2021"
                     link="https://medium.com/@jameshagood/the-5-best-books-i-read-in-2020-1b0b8b2b0b9d"
-                />
+                /> */}
             </ul>
         </section>
     )
