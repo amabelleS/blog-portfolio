@@ -103,6 +103,7 @@ const MobileNav = () => {
               )
             })}
           </nav>
+          {/* socials */}
           <div className="mr-24 mt-10 md:hidden flex flex-col justify-around space-y-3">
             <Link href="https://github.com/amabelleS" target="_blank" rel="noopener noreferrer" className='hover:text-[#7929b9]'><FaGithub size={28}/></Link>
             <Link href="https://www.linkedin.com/in/amabelle-trachtenberg" target="_blank" rel="noopener noreferrer" className='hover:text-[#7929b9]'><FaLinkedin size={28}/></Link>

@@ -3,7 +3,7 @@ import FeaturedArticle from './components/FeaturedArticle'
 import { getSortedPostsData } from "@/lib/posts"
 // import ListItem from "./ListItem"
 import AnimatedText from "../components/uiElements/AnimatedText"
-import books from "@/public/images/books.jpg"
+// import books from "@/public/images/books.jpg"
 import blogData from '@/data/blog/blog'
 
 
@@ -22,26 +22,19 @@ export default function Blog() {
                 ))}
             </ul> */}
             <ul className="grid grid-cols-2 gap-16">
-                {/* {posts.map(post => ( */}
-                    {/* // <ListItem key={post.id} post={post} /> */}
-                    {/* <FeaturedArticle
-                        // key={post.id} 
-                        image_url={books.src}
-                        title="The 5 Best Books I Read in 2020"
-                        date="Jan 1, 2021"
-                        summery="I read 30 books in 2020. Here are the 5 best books I read in 2020."
-                        link="https://medium.com/@jameshagood/the-5-best-books-i-read-in-2020-1b0b8b2b0b9d"
+                {posts.map(article => (
+                    <FeaturedArticle 
+                        key={article.id}
+                        image_url={article.image_url}
+                        title={article.title}
+                        date={article.date}
+                        summery={article.summery}
+                        link={article.link}
+                        id={article.id}
                         />
-                    <FeaturedArticle
-                        // key={post.id} 
-                        image_url={books.src}
-                        title="The 5 Best Books I Read in 2020"
-                        date="Jan 1, 2021"
-                        summery="I read 30 books in 2020. Here are the 5 best books I read in 2020."
-                        link="https://medium.com/@jameshagood/the-5-best-books-i-read-in-2020-1b0b8b2b0b9d"
-                        /> */}
-                {/* ))} */}
-                {blogData.filter((article) => article.isFeatured).map((article) => {
+                    
+                ))}
+                {/* {blogData.filter((article) => article.isFeatured).map((article) => {
                     return (
                         <FeaturedArticle
                             key={article.id}
@@ -50,9 +43,10 @@ export default function Blog() {
                             date={article.date}
                             summery={article.summery}
                             link={article.link}
+                            id={article.id}
                         />
                     )
-                })}
+                })} */}
                 {/* <FeaturedArticle
                 // key={post.id} 
                 image_url={books.src}
@@ -80,24 +74,6 @@ export default function Blog() {
                     title="lorem ipsum dolor sit amet, consectetur adipiscing elit."
                     date="Jan 1, 2021"
                     link="https://medium.com/@amabelletr/supercharge-your-javascript-skills-discover-structuredclone-array-at-2094ba48fdd6"
-                /> */}
-                {/* <Article 
-                    img={books.src}
-                    title="The 5 Best Books I Read in 2020"
-                    date="Jan 1, 2021"
-                    link="https://medium.com/@jameshagood/the-5-best-books-i-read-in-2020-1b0b8b2b0b9d"
-                />
-                <Article 
-                    img={books.src}
-                    title="The 5 Best Books I Read in 2020"
-                    date="Jan 1, 2021"
-                    link="https://medium.com/@jameshagood/the-5-best-books-i-read-in-2020-1b0b8b2b0b9d"
-                />
-                <Article 
-                    img={books.src}
-                    title="The 5 Best Books I Read in 2020"
-                    date="Jan 1, 2021"
-                    link="https://medium.com/@jameshagood/the-5-best-books-i-read-in-2020-1b0b8b2b0b9d"
                 /> */}
             </ul>
         </section>

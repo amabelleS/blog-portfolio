@@ -12,6 +12,7 @@ export function getSortedPostsData() {
     // Get file names under /posts
     const fileNames = fs.readdirSync(postsDirectory);
     const allPostsData = fileNames.map((fileName) => {
+        
         // Remove ".md" from file name to get id
         const id = fileName.replace(/\.md$/, '');
 
@@ -34,6 +35,12 @@ export function getSortedPostsData() {
             id,
             title: matterResult.data.title,
             date: matterResult.data.date,
+            summery: matterResult.data.summery,
+            slug: matterResult.data.slug,
+            image_url: matterResult.data.image_url,
+            link: matterResult.data.link,
+            // published_url: matterResult.data.published_url,
+            isFeatured: matterResult.data.isFeatured,
             contentHtml,
         }
     
@@ -48,6 +55,7 @@ export function getSortedPostsData() {
         // // Combine the data with the id
         // return blogPost
     });
+    // console.log("🚀 ~ file: posts.ts:59 ~ allPostsData ~ allPostsData:", allPostsData)
     // Sort posts by date
     return allPostsData.sort((a, b) => a.date < b.date ? 1 : -1);
 }
