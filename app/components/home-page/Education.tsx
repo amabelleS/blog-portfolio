@@ -20,7 +20,7 @@ const Details = ({degree, dates, school, description}: EducationDetailsProps) =>
         <motion.div
             initial={{ y: 50 }}
             whileInView={{ y: 0}}
-            transition={{doration: 0.5, type: 'spring', bounce: 0.25}}
+            transition={{doration: 0.5, type: 'spring'}}
         >
             <h3 className='capitalize font-bold text-2xl text-lime-600'>{degree}</h3>
             <span className='capitalize text-lime-100 font-medium'>{dates} | {school}</span>
