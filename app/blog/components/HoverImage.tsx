@@ -20,7 +20,7 @@ const HoverImage = ({title, img, link}: Props) => {
     // const rotateY = useMotionValue(0)
     // const scale = useMotionValue(1)
 
-    const imgRef = useRef(null)
+    const imgRef = useRef(null) as React.MutableRefObject<HTMLImageElement | null>
 
     const handleMouseEnter = (e: any) => {
         if (imgRef.current) {
