@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { IconType } from "react-icons";
 
-type BlogPost = {
+export type BlogPost = {
     id: string,
     title: string,
     date: string,
@@ -10,6 +10,16 @@ type BlogPost = {
     image_url: string,
     link: string,
     isFeatured: boolean,
+}
+
+export type FeaturedArticle = {
+  image_url: string,
+  title: string,
+  date: string,
+  summery: string,
+  link: string,
+  id?: string | undefined,
+  slug?: string,
 }
 
 export interface Service {

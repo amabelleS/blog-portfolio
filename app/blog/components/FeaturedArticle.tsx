@@ -3,7 +3,7 @@ import Image from "next/image"
 import { FiExternalLink } from 'react-icons/fi';
 import getFormattedDate from "@/lib/getFormattedDate"
 
-type FeaturedArticleProps = {
+export type FeaturedArticleProps = {
     image_url: string,
     title: string,
     date: string,
@@ -18,7 +18,7 @@ const FeaturedArticle = ({image_url, title, date, summery, link, id}: FeaturedAr
     const formattedDate = getFormattedDate(date)
 
   return (
-    <li className="col-span-2 sm:col-span-1 flex flex-col justify-between w-full overflow-x-wrap p-4 bg-stone-900 border-solid border-lime-100 border-8 border-l-[1px] border-t-[1px] border-e-rose-900 border-s-2 rounded-2xl text-lime-600">
+    <li className="col-span-2 sm:col-span-1 flex flex-col justify-between w-full overflow-x-wrap p-4 bg-stone-900 border-solid border-lime-100 border-8 border-l-[1px] border-t-[1px] border-e-teal-900 border-s-2 rounded-2xl text-lime-600">
             <Link className='x-full cursor-pointer overflow-hidden' href={`/blog/${id}`} target="_blank">
                 <Image 
                     src={image_url} 

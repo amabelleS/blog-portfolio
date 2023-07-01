@@ -5,6 +5,7 @@ import { getSortedPostsData } from "@/lib/posts"
 import AnimatedText from "../components/uiElements/AnimatedText"
 // import books from "@/public/images/books.jpg"
 import blogData from '@/data/blog/blog'
+import FeaturedArticles from './components/FeaturedArticles'
 
 
 export default function Blog() {
@@ -22,7 +23,8 @@ export default function Blog() {
                     <ListItem key={post.id} post={post} />
                 ))}
             </ul> */}
-            <ul className="grid grid-cols-2 gap-16">
+            <FeaturedArticles />
+            {/* <ul className="grid grid-cols-2 gap-16">
                 {posts.filter(article => article.isFeatured).map(article => {
                     return (
                         <FeaturedArticle
@@ -37,7 +39,7 @@ export default function Blog() {
                     )
                 }
                 )}
-            </ul>
+            </ul> */}
             <h2 className="text-4xl my-16 w-full mt-32 text-center font-bold dark:text-lime-100">All Articles</h2>
             <ul className="w-full ">
                 {blogData.filter((article) => !article.isFeatured).map((article) => {
