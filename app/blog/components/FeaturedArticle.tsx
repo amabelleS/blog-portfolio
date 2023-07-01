@@ -13,7 +13,7 @@ type FeaturedArticleProps = {
     slug?: string,
 }
 
-const FeaturedArticle = ({image_url, title, date, summery, link, id, slug}: FeaturedArticleProps) => {
+const FeaturedArticle = ({image_url, title, date, summery, link, id}: FeaturedArticleProps) => {
     
     const formattedDate = getFormattedDate(date)
 

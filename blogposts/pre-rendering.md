@@ -5,7 +5,6 @@ summery: "In this article, we will dive into three exciting features: structured
 slug: "pre-rendering"
 image_url: "https://i.imgur.com/kqunkCm.png"
 link: "https://medium.com/@amabelletr/supercharge-your-javascript-skills-discover-structuredclone-array-at-2094ba48fdd6"
-published_url: "https://medium.com/@amabelletr/supercharge-your-javascript-skills-discover-structuredclone-array-at-2094ba48fdd6"
 isFeatured: false
 ---
 

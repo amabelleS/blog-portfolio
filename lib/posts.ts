@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
 import markdownToHtml from "@/lib/markdownToHtml"
+import { BlogPost } from "@/types";
 // import remarkPrism from "remark-prism";
 
 const postsDirectory = path.join(process.cwd(), 'blogposts')

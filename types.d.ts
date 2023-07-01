@@ -9,7 +9,6 @@ type BlogPost = {
     slug: string,
     image_url: string,
     link: string,
-    published_url: string,
     isFeatured: boolean,
 }
 
