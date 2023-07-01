@@ -1,5 +1,3 @@
-import React from 'react'
-// import { FeaturedArticle  } from '@/types'
 import { getSortedPostsData } from "@/lib/posts"
 import FeaturedArticle from './FeaturedArticle'
 

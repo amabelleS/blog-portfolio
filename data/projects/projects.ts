@@ -44,7 +44,7 @@ export default [
         github_url: "https://github.com/amabelleS/storages-frontend",
         category: ["react", "node", "express", "mongo", "mongoos", "canvasjs", "cloudinary", "firebase", "render", ],
         key_techs: ["React", "Node", "Express", "MongoDB", "Mongoose", "CanvasJS", "Cloudinary", "Firebase"],
-        isFeatured: false,
+        isFeatured: true,
         id: 4,
     },
     {
