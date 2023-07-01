@@ -30,12 +30,15 @@ const variants: Variants = {
 const Details = ({degree, dates, school, description}: EducationDetailsProps) => {
     const ref = React.useRef(null)
 
-    return <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[75%] mx-auto flex flex-col items-start justify-between'>
+    return <motion.li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[75%] mx-auto flex flex-col items-start justify-between'
+        initial='offscreen'
+        whileInView='onscreen'
+    >
         <LiIcon reference={ref}/>
         <motion.div
             variants={variants}
-            initial='offscreen'
-            whileInView='onscreen'
+            // initial='offscreen'
+            // whileInView='onscreen'
             // initial={{ y: 50 }}
             // whileInView={{ y: 0}}
             // transition={{doration: 0.5, type: 'spring'}}
@@ -46,7 +49,7 @@ const Details = ({degree, dates, school, description}: EducationDetailsProps) =>
             {/* <span className='capitalize font-medium text-dark/75'>{time} | {adreaa}</span> */}
             <p className='font-medium w-full'>{description}</p>
         </motion.div>
-    </li>
+    </motion.li>
 }
 
 function Education() {
