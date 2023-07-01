@@ -1,4 +1,4 @@
-const particlesConfig = {
+const particlesConfig: any = {
     autoPlay: true,
     background: {
       color: {
