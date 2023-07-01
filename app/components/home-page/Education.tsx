@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { motion, useScroll } from 'framer-motion'
+import { motion, useScroll, Variants } from 'framer-motion'
 import LiIcon from './LiIcon'
 import education from '@/data/education'
 
@@ -12,15 +12,34 @@ type EducationDetailsProps = {
     description: string,
 }
 
+const variants: Variants = {
+    offscreen: {
+      y: 50
+    },
+    onscreen: {
+      y: 0,
+    //   rotate: -10,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.8
+      }
+    }
+  };
+
 const Details = ({degree, dates, school, description}: EducationDetailsProps) => {
     const ref = React.useRef(null)
 
     return <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[75%] mx-auto flex flex-col items-start justify-between'>
         <LiIcon reference={ref}/>
         <motion.div
-            initial={{ y: 50 }}
-            whileInView={{ y: 0}}
-            transition={{doration: 0.5, type: 'spring'}}
+            variants={variants}
+            initial='offscreen'
+            whileInView='onscreen'
+            // initial={{ y: 50 }}
+            // whileInView={{ y: 0}}
+            // transition={{doration: 0.5, type: 'spring'}}
+            // transition={{doration: 0.5, type: 'spring', bounce: 0.25}}
         >
             <h3 className='capitalize font-bold text-2xl text-lime-600'>{degree}</h3>
             <span className='capitalize text-lime-100 font-medium'>{dates} | {school}</span>
