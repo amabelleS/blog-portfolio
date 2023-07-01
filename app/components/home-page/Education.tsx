@@ -22,7 +22,7 @@ const variants: Variants = {
       transition: {
         type: "spring",
         bounce: 0.4,
-        duration: 0.8
+        // duration: 0.8
       }
     }
   };
