@@ -81,6 +81,12 @@ export async function getPostData(id: string) {
         id,
         title: matterResult.data.title,
         date: matterResult.data.date,
+        summery: matterResult.data.summery,
+        slug: matterResult.data.slug,
+        image_url: matterResult.data.image_url,
+        link: matterResult.data.link,
+        // published_url: matterResult.data.published_url,
+        isFeatured: matterResult.data.isFeatured,
         contentHtml,
     }
 
