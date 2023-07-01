@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { getSortedPostsData } from "@/lib/posts"
-import ListItem from "./ListItem"
+// import ListItem from "./ListItem"
 import AnimatedText from "../uiElements/AnimatedText"
 import books from "@/public/images/books.jpg"
 
