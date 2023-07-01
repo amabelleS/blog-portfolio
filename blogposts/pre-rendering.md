@@ -2,11 +2,11 @@
 title: "Two Forms of Pre-rendering"
 date: "2023-03-14"
 summery: "In this article, we will dive into three exciting features: structuredClone(), array.at(), and the Change Array by Copy Proposal, which is now in the finished stage"
-slug: "supercharge_your_javaScript_skills"
+slug: "pre-rendering"
 image_url: "https://i.imgur.com/kqunkCm.png"
 link: "https://medium.com/@amabelletr/supercharge-your-javascript-skills-discover-structuredclone-array-at-2094ba48fdd6"
 published_url: "https://medium.com/@amabelletr/supercharge-your-javascript-skills-discover-structuredclone-array-at-2094ba48fdd6"
-isFeatured: true
+isFeatured: false
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.

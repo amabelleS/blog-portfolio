@@ -1,5 +1,6 @@
 ---
-title: "Supercharge Your JavaScript Skills: Discover structuredClone(), array.at(), and the Change Array by Copy Proposal"
+title: "Supercharge Your JavaScript Skills: Discover structuredClone(), 
+array.at(), and the Change Array by Copy Proposal"
 date: "2023-06-23"
 summery: "In this article, we will dive into three exciting features: structuredClone(), array.at(), and the Change Array by Copy Proposal, which is now in the finished stage"
 slug: "supercharge_your_javaScript_skills"

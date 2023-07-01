@@ -9,6 +9,7 @@ import blogData from '@/data/blog/blog'
 
 export default function Blog() {
     const posts = getSortedPostsData()
+    // const featuredArticles = blogData.filter((article) => article.isFeatured)
 
     return (
         <section className="w-full my-16 px-12 flex flex-col items-center justify-center overflow-hidden">
@@ -22,19 +23,7 @@ export default function Blog() {
                 ))}
             </ul> */}
             <ul className="grid grid-cols-2 gap-16">
-                {posts.map(article => (
-                    <FeaturedArticle 
-                        key={article.id}
-                        image_url={article.image_url}
-                        title={article.title}
-                        date={article.date}
-                        summery={article.summery}
-                        link={article.link}
-                        id={article.id}
-                        />
-                    
-                ))}
-                {/* {blogData.filter((article) => article.isFeatured).map((article) => {
+                {posts.filter(article => article.isFeatured).map(article => {
                     return (
                         <FeaturedArticle
                             key={article.id}
@@ -46,22 +35,15 @@ export default function Blog() {
                             id={article.id}
                         />
                     )
-                })} */}
-                {/* <FeaturedArticle
-                // key={post.id} 
-                image_url={books.src}
-                title="The 5 Best Books I Read in 2020"
-                date="Jan 1, 2021"
-                summery="I read 30 books in 2020. Here are the 5 best books I read in 2020."
-                link="https://medium.com/@jameshagood/the-5-best-books-i-read-in-2020-1b0b8b2b0b9d"
-                /> */}
+                }
+                )}
             </ul>
             <h2 className="text-4xl my-16 w-full mt-32 text-center font-bold dark:text-lime-100">All Articles</h2>
             <ul className="w-full ">
                 {blogData.filter((article) => !article.isFeatured).map((article) => {
                     return (
                         <Article
-                            key={article.id}
+                            key={article.slug}
                             image_url={article.image_url}
                             title={article.title}
                             date={article.date}

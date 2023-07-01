@@ -18,7 +18,7 @@ const FeaturedArticle = ({image_url, title, date, summery, link, id, slug}: Feat
     const formattedDate = getFormattedDate(date)
 
   return (
-    <li className="col-span-1 flex flex-col justify-between w-full p-4 bg-stone-900 border-solid border-lime-100 border-8 border-l-[1px] border-t-[1px] border-e-rose-900 border-s-2 rounded-2xl text-lime-600">
+    <li className="col-span-2 sm:col-span-1 flex flex-col justify-between w-full overflow-x-wrap p-4 bg-stone-900 border-solid border-lime-100 border-8 border-l-[1px] border-t-[1px] border-e-rose-900 border-s-2 rounded-2xl text-lime-600">
             <Link className='x-full cursor-pointer overflow-hidden' href={`/blog/${id}`} target="_blank">
                 <Image 
                     src={image_url} 
