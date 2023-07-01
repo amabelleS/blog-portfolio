@@ -39,7 +39,6 @@ export function generateMetadata({ params }: { params: { blogId: string } }) {
         }
     }
     
-    console.log("🚀 ~ file: page.tsx:35 ~ generateMetadata ~ post:", post)
     return {
         title: post.title,
     }
