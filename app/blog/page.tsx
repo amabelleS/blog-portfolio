@@ -19,7 +19,7 @@ export default function Blog() {
             {/* Welcome to my blog, a space where I reflect on my coding adventures, share insights, and provide resources to inspire and empower developers in their own coding journeys. */}
             <AnimatedText text="Welcome to my blog, a space dedicated to sharing my experiences and knowledge with fellow developers, inspiring learning and fostering a supportive community." className='!text-3xl my-6 text-lime-200 ' />         
             <FeaturedArticles />
-            <h2 className="text-4xl my-16 w-full text-center font-bold dark:text-lime-400">All Articles</h2>
+            <h2 className="text-4xl my-16 w-full text-center font-bold text-lime-400">All Articles</h2>
             <ul className="w-full ">
                 {blogData.filter((article) => !article.isFeatured).map((article) => {
                     return (

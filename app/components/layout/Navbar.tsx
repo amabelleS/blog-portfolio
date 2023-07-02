@@ -22,40 +22,13 @@ const Navbar = () => {
         initial="hidden"
         whileInView="show"
         // className={`w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600"`}
-        className={`${styles.xPaddings} mx-auto max-w-7xl px-2 sm:px-6 lg:px-8`}
+        className={`${styles.xPaddings} mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 text-lime-100`}
     >
         {/* <div className="absolute w-[50%] inset-0 gradient-01" /> */}
         <div
         className={`${styles.innerWidth} relative flex h-16 p-4 items-center justify-between`}
         >
-            {/* Mobile */} 
-           
-            {/* <div className="flex md:hidden">
-                <button className='py-3 rounded-md' onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                    {isMenuOpen ? (
-                        <Image
-                            src={contactMe}
-                            alt="contactMe"
-                            width={24}
-                            height={24}
-                            className="w-[24px] h-[24px] object-contain"/>
-                    ) : (
-                        <Image 
-                            src={menu}
-                            alt="menu"
-                            width={24}
-                            height={24}
-                            className="w-[24px] h-[24px] object-contain"
-                        />
-                    )}
-                </button>
-            </div> */}
-        {/* <div className={`md:block ${isMenuOpen ? 'block' : 'hidden'}`}>
-            <ul className="md:h-auto md:flex gap-8 h-screen">
-                <Link href='/posts'>Ppsts</Link>
-            </ul>
-        </div> */}
-        {/* <ul className='flex flex-row justify-between'> */}
+        {/* desktop */}    
         <ul className="hidden space-x-2 md:h-auto md:flex gap-8">
             {NAV_ITEMS.map((link) => (
             <li key={link.name}>

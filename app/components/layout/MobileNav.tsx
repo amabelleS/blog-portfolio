@@ -35,7 +35,7 @@ const MobileNav = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className="text-gray-900 dark:text-gray-100"
+          className="text-lime-100"
         >
           <path
             fillRule="evenodd"
@@ -52,7 +52,7 @@ const MobileNav = () => {
           initial="exit"
           exit="exit"
           variants={variants}
-          className='fixed inset-0 z-20 h-full w-full bg-white opacity-95 dark:bg-black'
+          className='fixed inset-0 z-20 h-full w-full bg-black'
         >
           <header className="flex justify-end py-5 px-4">
             <button
@@ -65,7 +65,7 @@ const MobileNav = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                className="text-gray-900 dark:text-gray-100"
+                className="text-lime-100"
               >
                 <path
                   fillRule="evenodd"
