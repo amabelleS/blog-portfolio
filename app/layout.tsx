@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 // import NavbarOne from './components/layout/NavbarOne'
 import Navbar from './components/layout/Navbar'
+import PracticlesBG from './components/home-page/PracticlesBG'
 // import TransitionEffect from './components/TransitionEffect'
 // import { ThemeProvider } from "next-themes"
 

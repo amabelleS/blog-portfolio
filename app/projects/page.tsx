@@ -5,13 +5,14 @@ import AnimatedText from '../components/uiElements/AnimatedText'
 import Project from './components/Project'
 import FeaturedProject from './components/FeaturedProject'
 import FeaturedProjects from './components/FeaturedProjects'
-import { motion } from 'framer-motion'
+import PracticlesBG from './components/PracticlesBG'
 import projects from '@/data/projects/projects'
 
 
 const Projects = () => {
   return (
     <div className="w-full my-6 px-12 flex flex-col items-center justify-center overflow-hidden">
+      <PracticlesBG />
     {/* <div className="mx-auto px-4"> */}
       <h2 className="text-4xl md:text-5xl text-center font-bold text-lime-400">Projects</h2>
       {/* <AnimatedText text="Building digital experiences that inspire and empower users through innovative solutions."  */}

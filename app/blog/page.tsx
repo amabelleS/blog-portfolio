@@ -6,6 +6,7 @@ import AnimatedText from "../components/uiElements/AnimatedText"
 // import books from "@/public/images/books.jpg"
 import blogData from '@/data/blog/blog'
 import FeaturedArticles from './components/FeaturedArticles'
+import PracticlesBG from './components/PracticlesBG'
 
 
 export default function Blog() {
@@ -13,6 +14,7 @@ export default function Blog() {
 
     return (
         <div className="w-full my-6 px-12 flex flex-col items-center justify-center overflow-hidden">
+            <PracticlesBG />
         {/* <section className="mt-6 mx-auto max-w-2xl"> */}
             <h2 className="text-5xl text-center font-bold text-lime-400">Featured Articles</h2>
             
