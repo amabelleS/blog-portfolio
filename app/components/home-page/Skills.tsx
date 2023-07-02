@@ -22,8 +22,8 @@ export default function Skills({}: Props) {
             <div className='p-4 mx-auto col-span-1'>
                 <Image
                     src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"
-                    width={88}
-                    height={77}
+                    width={121}
+                    height={111}
                     alt="mongodb logo"
                     className='hover:motion-safe:animate-pulse'
                 />
