@@ -10,15 +10,7 @@ export default function Skills({}: Props) {
         </div>
         <div className='grid grid-cols-5 items-center text-center'>
         {/* <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 text-center'> */}
-            <div className='p-4 mx-auto col-span-1'>
-                <Image
-                    src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                    width={42}
-                    height={32}
-                    className='hover:motion-safe:animate-pulse font-bold'
-                    alt="react logo"
-                />
-            </div>
+           
             <div className='p-4 mx-auto col-span-1'>
                 <Image
                     src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"
@@ -47,6 +39,16 @@ export default function Skills({}: Props) {
                     className='hover:motion-safe:animate-pulse'
                 />
             </div>
+            <div className='p-4 mx-auto col-span-1'>
+                <Image
+                    src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                    width={42}
+                    height={32}
+                    className='hover:motion-safe:animate-pulse font-bold'
+                    alt="React logo"
+                />
+            </div>
+            
             <div className='p-4 mx-auto col-span-1'>
                 <Image
                     src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
@@ -113,8 +115,8 @@ export default function Skills({}: Props) {
             <div className='p-4 mx-auto col-span-1'>
                 <Image
                     src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg"
-                    width={88}
-                    height={77}
+                    width={121}
+                    height={111}
                     alt="Docker logo"
                     className='hover:motion-safe:animate-pulse'
                 />
@@ -140,9 +142,9 @@ export default function Skills({}: Props) {
             <div className='p-4 mx-auto col-span-1'>
                 <Image
                     src="https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg"
-                    width={88}
-                    height={77}
-                    alt="GitHub logo"
+                    width={111}
+                    height={101}
+                    alt="Firebase logo"
                     className='hover:motion-safe:animate-pulse'
                 />
             </div>

@@ -4,7 +4,8 @@ import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import particlesConfig from "@/config/practicles-planes";
+import particlesConfig from "@/config/practicles-rainbow-mouse";
+// import particlesConfig from "@/config/practicles-planes";
 // import particlesConfig from "@/config/practicles-hyperspace";
 
 function PracticlesBG() {
