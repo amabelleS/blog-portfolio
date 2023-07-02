@@ -73,7 +73,7 @@ export default async function Blog({ params }: { params: { blogId: string } }) {
     //   }, [post]); // <--- run when post updates
 
     return (
-        <main className="px-6 prose prose-xl prose-slate dark:prose-invert mx-auto">
+        <main className="px-6 prose prose-xl prose-invert dark:prose-invert mx-auto">
             <h1 className="text-3xl mt-4 mb-0">{title}</h1>
             <p className="mt-0">
                 {pubDate}

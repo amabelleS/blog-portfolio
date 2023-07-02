@@ -9,9 +9,17 @@ link: "https://medium.com/@amabelletr/supercharge-your-javascript-skills-discove
 isFeatured: true
 ---
 
-<!-- # Supercharge Your JavaScript Skills: Discover structuredClone(), array.at(), and the Change Array by Copy Proposal -->
+<!-- <style>
+.heading1 {
+    color: white;
+}
+</style> -->
 
 ## **Introduction**
+
+<!-- <h1 id="identifier" class="heading1">
+    Markdown h1 styles
+</h1> -->
 
 JavaScript is a dynamic and ever-evolving language, constantly introducing new features to enhance developers’ productivity and expand the capabilities of the language. Staying up-to-date with these new features is essential for every JavaScript developer. In this article, we will dive into three exciting features: [structuredClone()](https://developer.mozilla.org/en-US/docs/Web/API/structuredClone), [array.at()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/at), and the [Change Array by Copy Proposal](https://github.com/tc39/proposal-change-array-by-copy), which is now in the finished stage (4).
 

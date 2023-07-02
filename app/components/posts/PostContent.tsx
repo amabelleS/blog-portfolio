@@ -30,7 +30,7 @@ function PostContent({contentHtml, postId}: Props) {
 
   return (
     <div>
-        <article>
+        <article className=''>
             {/* <pre><code className="language-js">console.log("Hello World")</code></pre> */}
             
             <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
