@@ -1,8 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-// import demoPic from './flying-house.png'
 import { FaGithub } from 'react-icons/fa';
-// import dynamic from 'next/dynamic'
 
 type Project = {
     title: string,
@@ -20,7 +18,6 @@ const Project = ({title, summery, type, image_path, deployed_url, github_url}: P
         {/* <div className='absolute top-o -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-lime-400'/> */}
         <Link className='x-full cursor-pointer overflow-hidden rounded-lg' href={deployed_url}>
           <Image src={image_path} alt={title} width={166} height={166} className="w-full h-auto  hover:motion-safe:animate-pulse" />
-          {/* <Image src="https://imgur.com/Vzg7FdT.png" alt={title} width={300} height={300} className="rounded-full mx-auto hover:motion-safe:animate-wiggle" /> */}
         </Link>
         <div className='w-full flex flex-col items-start justify-between mt-4'>
           <span className='text-lime-400 font-medium text-xl'>{type}</span>
