@@ -13,9 +13,9 @@ export default function Skills({}: Props) {
             <div className='p-4 mx-auto col-span-1'>
                 <Image
                     src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                    width={88}
-                    height={77}
-                    className='p-6 mx-auto hover:motion-safe:animate-pulse font-bold'
+                    width={42}
+                    height={32}
+                    className='hover:motion-safe:animate-pulse font-bold'
                     alt="react logo"
                 />
             </div>
