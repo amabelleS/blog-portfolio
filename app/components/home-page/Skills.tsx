@@ -5,9 +5,7 @@ type Props = {}
 export default function Skills({}: Props) {
   return (
     <div className='w-full h-full bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700'>
-    {/* <div className='w-full h-full bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400'> */}
-    {/* <div className='w-full h-full bg-gradient-to-r from-green-300 to-purple-400'> */}
-        <div className="text-3xl text-center font-bold text-dark text-teal-900 pt-10 pb-10">
+        <div className="text-3xl text-center font-bold text-dark text-teal-900 pt-10">
             Tech Stack
         </div>
         <div className='grid grid-cols-5 items-center text-center'>
