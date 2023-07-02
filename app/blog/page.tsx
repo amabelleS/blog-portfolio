@@ -10,7 +10,6 @@ import FeaturedArticles from './components/FeaturedArticles'
 
 export default function Blog() {
     const posts = getSortedPostsData()
-    // const featuredArticles = blogData.filter((article) => article.isFeatured)
 
     return (
         <div className="w-full my-6 px-12 flex flex-col items-center justify-center overflow-hidden">
@@ -33,12 +32,6 @@ export default function Blog() {
                         />
                     )
                 })}
-                {/* <Article 
-                    image_url='https://i.imgur.com/kqunkCm.png'
-                    title="lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                    date="Jan 1, 2021"
-                    link="https://medium.com/@amabelletr/supercharge-your-javascript-skills-discover-structuredclone-array-at-2094ba48fdd6"
-                /> */}
             </ul>
         </div>
     )
