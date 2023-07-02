@@ -13,17 +13,14 @@ export default function Blog() {
     // const featuredArticles = blogData.filter((article) => article.isFeatured)
 
     return (
-        <div className="w-full my-16 px-12 flex flex-col items-center justify-center overflow-hidden">
+        <div className="w-full my-6 px-12 flex flex-col items-center justify-center overflow-hidden">
         {/* <section className="mt-6 mx-auto max-w-2xl"> */}
-            <h2 className="text-5xl mb-6 text-center font-bold text-lime-200">Featured Articles</h2>
-            <AnimatedText text="Within the pages of knowledge, we find the power to shape perspectives, challenge boundaries, and inspire change through the timeless gift of words." className='!text-3xl my-6 text-lime-600 ' />
-            {/* <ul className="w-full">
-                {posts.map(post => (
-                    <ListItem key={post.id} post={post} />
-                ))}
-            </ul> */}
+            <h2 className="text-5xl text-center font-bold text-lime-400">Featured Articles</h2>
+            
+            {/* Welcome to my blog, a space where I reflect on my coding adventures, share insights, and provide resources to inspire and empower developers in their own coding journeys. */}
+            <AnimatedText text="Welcome to my blog, a space dedicated to sharing my experiences and knowledge with fellow developers, inspiring learning and fostering a supportive community." className='!text-3xl my-6 text-lime-200 ' />         
             <FeaturedArticles />
-            <h2 className="text-4xl my-16 w-full mt-32 text-center font-bold dark:text-lime-100">All Articles</h2>
+            <h2 className="text-4xl my-16 w-full text-center font-bold dark:text-lime-400">All Articles</h2>
             <ul className="w-full ">
                 {blogData.filter((article) => !article.isFeatured).map((article) => {
                     return (

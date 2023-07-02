@@ -29,13 +29,13 @@ const FeaturedArticle = ({image_url, title, date, summery, link, id}: FeaturedAr
                 className="w-full h-auto inline-block rounded-lg hover:motion-safe:animate-pulse" 
             />
         </Link>
-        <Link href={`/blog/${id}`} target="_blank">
-            <h3 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline">{title}</h3>
+        <Link href={`/blog/${id}`} target="_blank" className='hover:underline text-lime-400 underline-offset-3'>
+            <h3 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline text-lime-400">{title}</h3>
         </Link>
-        <p className="text-sm mb-2 font-medium">{summery}</p>
+        <p className="text-sm mb-2 font-medium text-lime-100">{summery}</p>
         <div className='mt-2 flex justify-between items-center'>
-            <span className="text-sm font-semibold text-teal-600">{formattedDate}</span>
-            <Link href={link} target='_blank' className='text-lime-600'>
+            <span className="text-sm font-semibold text-lime-400">{formattedDate}</span>
+            <Link href={link} target='_blank' className='text-teal-600'>
             <FiExternalLink size={36}/>
             </Link>
         </div>

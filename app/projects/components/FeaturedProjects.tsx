@@ -6,7 +6,7 @@ type Props = {}
 function FeaturedArticles({}: Props) {
 
   return (
-    <ul className="grid grid-cols-2 gap-16">
+    <ul className="grid grid-cols-2 gap-16 mb-8">
         {projects.filter(project => project.isFeatured).map(project => {
             return (
                 <FeaturedProject
