@@ -8,7 +8,7 @@ import Navbar from './components/layout/Navbar'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: "Amabelle's Blog | Protfolio",
+  title: "Amabelle's Blog | Portfolio",
   description: 'I post about programming and web development. Created with Next.js and Tailwind CSS by Amabelle Trachtenberg',
   favicon: '/favicon.ico',
 }
