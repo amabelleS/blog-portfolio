@@ -69,7 +69,7 @@ export default function Posts() {
                     {/* // <ListItem key={post.id} post={post} /> */}
                     <FeaturedArticles 
                         // key={post.id} 
-                        img={books.src}
+                        img="https://imgur.com/9BKOkLd.png"
                         title="The 5 Best Books I Read in 2020"
                         time="Jan 1, 2021"
                         summery="I read 30 books in 2020. Here are the 5 best books I read in 2020."
@@ -77,7 +77,7 @@ export default function Posts() {
                         />
                     <FeaturedArticles 
                         // key={post.id} 
-                        img={books.src}
+                        img="https://imgur.com/9BKOkLd.png"
                         title="The 5 Best Books I Read in 2020"
                         time="Jan 1, 2021"
                         summery="I read 30 books in 2020. Here are the 5 best books I read in 2020."
@@ -88,19 +88,19 @@ export default function Posts() {
             <h2 className="text-4xl my-16 w-full mt-32 text-center font-bold dark:text-lime-100">All Articles</h2>
             <ul className="">
                 <Article 
-                    img={books.src}
+                    img="https://imgur.com/9BKOkLd.png"
                     title="The 5 Best Books I Read in 2020"
                     date="Jan 1, 2021"
                     link="https://medium.com/@jameshagood/the-5-best-books-i-read-in-2020-1b0b8b2b0b9d"
                 />
                 <Article 
-                    img={books.src}
+                    img="https://imgur.com/9BKOkLd.png"
                     title="The 5 Best Books I Read in 2020"
                     date="Jan 1, 2021"
                     link="https://medium.com/@jameshagood/the-5-best-books-i-read-in-2020-1b0b8b2b0b9d"
                 />
                 <Article 
-                    img={books.src}
+                    img="https://imgur.com/9BKOkLd.png"
                     title="The 5 Best Books I Read in 2020"
                     date="Jan 1, 2021"
                     link="https://medium.com/@jameshagood/the-5-best-books-i-read-in-2020-1b0b8b2b0b9d"
