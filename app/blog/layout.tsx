@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Amabelle's Blog | Blog Page",
+  title: "Amabelle's Portfolio | Blog",
   description: 'Projects using Next.js and Tailwind CSS, React, Node.js MongoDB by Amabelle Trachtenberg',
   favicon: '/favicon.ico',
 }
