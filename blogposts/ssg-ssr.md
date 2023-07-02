@@ -5,7 +5,7 @@ summery: "In this article, we will dive into three exciting features: structured
 slug: "ssg-ssr"
 image_url: "https://i.imgur.com/kqunkCm.png"
 link: "https://medium.com/@amabelletr/supercharge-your-javascript-skills-discover-structuredclone-array-at-2094ba48fdd6"
-isFeatured: true
+isFeatured: false
 ---
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.

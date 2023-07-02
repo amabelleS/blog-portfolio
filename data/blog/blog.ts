@@ -11,7 +11,7 @@ export default [
         // id: 1,
     },
     {
-        title: "Soon to be published!",
+        title: "To be published!",
         date: "2023-06-23",
         summery: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
         image_url: "https://i.imgur.com/kqunkCm.png",
@@ -21,7 +21,7 @@ export default [
         // id: 2,
     },
     {
-        title: "Soon to be published!",
+        title: "To be published!",
         date: "2023-06-23",
         summery: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
         image_url: "https://i.imgur.com/kqunkCm.png",
@@ -31,7 +31,7 @@ export default [
         // id: 3,
     },
     {
-        title: "Soon to be published!",
+        title: "To be published!",
         date: "2023-06-23",
         summery: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
         image_url: "https://i.imgur.com/kqunkCm.png",
