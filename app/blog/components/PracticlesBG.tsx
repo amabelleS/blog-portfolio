@@ -4,6 +4,7 @@ import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+// import particlesConfig from "@/config/practicles-rain";
 import particlesConfig from "@/config/practicles-link";
 // import particlesConfig from "@/config/practicles-space";
 // import particlesConfig from "@/config/practicles-ring";

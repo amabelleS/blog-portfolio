@@ -1,88 +1,122 @@
 import type { ISourceOptions } from "tsparticles-engine";
 
 const configs: ISourceOptions = {
-  particles: {
-    color: {
-      value: "#134e4a",
-      animation: {
-        enable: true,
-        speed: 10
+  backgroundMode: {
+    enable: true,
+    zIndex: 0
+  },
+  "particles": {
+    "number": {
+      "value": 355,
+      "density": {
+        "enable": true,
+        "value_area": 789.1476416322727
       }
     },
-    move: {
-      attract: {
-        enable: false,
-        distance: 100,
-        rotate: {
-          x: 2000,
-          y: 2000
-        }
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#a3e635"
       },
-      direction: "none",
-      enable: true,
-      outModes: {
-        default: "destroy"
+      "polygon": {
+        "nb_sides": 5
       },
-      path: {
-        clamp: false,
-        enable: true,
-        delay: {
-          value: 0
-        },
-        generator: "polygonPathGenerator",
-        options: {
-          sides: 6,
-          turnSteps: 30,
-          angle: 30
-        }
-      },
-      random: false,
-      speed: 3,
-      straight: false,
-      trail: {
-        fillColor: "#000",
-        length: 20,
-        enable: true
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
       }
     },
-    number: {
-      density: {
-        enable: true,
-        area: 800
-      },
-      value: 0
+    "opacity": {
+      "value": 0.48927153781200905,
+      "random": false,
+      "anim": {
+        "enable": true,
+        "speed": 0.2,
+        "opacity_min": 0,
+        "sync": false
+      }
     },
-    opacity: {
-      value: 1
+    "size": {
+      "value": 2,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 2,
+        "size_min": 0,
+        "sync": false
+      }
     },
-    shape: {
-      type: "circle"
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#a3e635",
+      "opacity": 0.4,
+      "width": 1
     },
-    size: {
-      value: 2
+    "move": {
+      "enable": true,
+      "speed": 0.2,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
     }
   },
-  background: {
-    color: "#000"
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 83.91608391608392,
+        "size": 1,
+        "duration": 3,
+        "opacity": 1,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
   },
+  "retina_detect": true,
   fullScreen: {
+    enable: true,
     zIndex: -1
   },
-  emitters: {
-    direction: "none",
-    rate: {
-      quantity: 1,
-      delay: 0.25
-    },
-    size: {
-      width: 0,
-      height: 0
-    },
-    position: {
-      x: 50,
-      y: 50
-    }
-  }
 }
 
 export default configs;
