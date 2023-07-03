@@ -18,11 +18,9 @@ const variants: Variants = {
     },
     onscreen: {
       y: 0,
-    //   rotate: -10,
       transition: {
         type: "spring",
         bounce: 0.4,
-        // duration: 0.8
       }
     }
   };
@@ -30,7 +28,8 @@ const variants: Variants = {
 const Details = ({degree, dates, school, description}: EducationDetailsProps) => {
     const ref = React.useRef(null)
 
-    return <motion.li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[75%] mx-auto flex flex-col items-start justify-between'
+    return <motion.li ref={ref} 
+        className='my-8 first:mt-0 last:mb-0 w-[75%] mx-auto flex flex-col items-start justify-between'
         initial='offscreen'
         whileInView='onscreen'
     >
