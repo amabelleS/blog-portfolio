@@ -13,7 +13,7 @@ function LiIcon({reference}: Props) {
 
   const { scrollYProgress } = useScroll({
     target: reference,
-    offset: ["center end", "center center"]
+    offset: ["end end", "start start"]
   })
 
   return (

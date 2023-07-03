@@ -56,7 +56,11 @@ function Education() {
     const { scrollYProgress } = useScroll(
         {
             target: ref,
+            // offset: ["start end", "end end"]
             offset: ["start end", "center start"]
+            // offset: ["start end", "start start"]
+            // offset: ["start center", "center end", "center start"]
+            // offset: ["start end", "center start"]
         }
     )
 
