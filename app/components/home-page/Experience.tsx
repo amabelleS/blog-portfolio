@@ -44,13 +44,19 @@ const Details = ({position, company, company_url, dates, location, description}:
             // transition={{doration: 0.5, type: 'spring'}}
             // transition={{type: 'spring', bounce: 0.25}}
         >
-            <h3 className='capitalize font-bold text-2xl'>{position} 
-                <a href={company_url} target='_blank' className='text-lime-600 capitalize'>
+            {/* <h3 className='capitalize font-bold text-2xl'>{position} 
+                <Link href={company_url} target='_blank' className='text-lime-600 capitalize'>
                     @{company}
-                </a>
+                </Link>
+            </h3> */}
+            <h3 className='capitalize font-bold  text-teal-400 text-2xl'>
+                {position}
+                <span className=' text-lime-600 capitalize'>
+                    @{company}
+                </span>
             </h3>
             <span className='capitalize text-lime-100 font-medium'>{dates} | {location}</span>
-            <p className='font-medium w-full'>{description}</p>
+            <p className='font-medium  text-teal-100 w-full'>{description}</p>
         </motion.div>
     </motion.li>
 }
@@ -61,6 +67,7 @@ function Experience() {
         {
             target: ref,
             // offset: ["end end", "center center", "start start"]
+            // offset: ["start center", "end end", "start"]
             offset: ["start end", "center start"]
         }
     )

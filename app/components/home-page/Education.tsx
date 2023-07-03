@@ -46,7 +46,7 @@ const Details = ({degree, dates, school, description}: EducationDetailsProps) =>
             <h3 className='capitalize font-bold text-2xl text-lime-600'>{degree}</h3>
             <span className='capitalize text-lime-100 font-medium'>{dates} | {school}</span>
             {/* <span className='capitalize font-medium text-dark/75'>{time} | {adreaa}</span> */}
-            <p className='font-medium w-full'>{description}</p>
+            <p className='font-medium text-teal-100 w-full'>{description}</p>
         </motion.div>
     </motion.li>
 }
@@ -57,10 +57,8 @@ function Education() {
         {
             target: ref,
             // offset: ["start end", "end end"]
+            // offset: ["start end", "end end", "start"]
             offset: ["start end", "center start"]
-            // offset: ["start end", "start start"]
-            // offset: ["start center", "center end", "center start"]
-            // offset: ["start end", "center start"]
         }
     )
 
@@ -85,18 +83,6 @@ function Education() {
                     description={edu.description}
                 />
             })}
-            {/* <Details
-                type='Bachelor of Science in Computer Science'
-                time='2017 - 2021'
-                place='University of the Philippines Cebu'
-                info='I graduated with a Bachelor of Science in Computer Science from the University of the Philippines Cebu. I was a consistent Dean’s Lister and graduated with honors.'
-            />
-            <Details
-                type='Master of Science in Computer Science'
-                time='2019 - 2020'
-                place='University of Haifa'
-                info='dsdsds'
-            /> */}
         </ul>
       </div>
     </section>
