@@ -1,3 +1,5 @@
+Welcome to my portfolio on GitHub! This is a Next.js 13 application, powered by TypeScript and featuring a range of exciting technologies. I've utilized Tailwind CSS for seamless styling, Framer Motion for captivating animations, TSParticles to add a touch of magic, and Remark, Gray-Matter, and PrismJS for a powerful and customizable blogging experience. Explore my portfolio to discover even more exciting features and technologies!
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
