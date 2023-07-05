@@ -10,7 +10,9 @@ import Logo from "./Logo"
 // import menu from "./menu.svg"
 import { FaGithub, FaLinkedin, FaMailchimp } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
+import { BiDownload } from 'react-icons/bi';
 import MobileNav from './MobileNav'
+// import resume from '@public/resume.pdf';
 
 import styles from '../../styles/index.js';
 
@@ -50,13 +52,21 @@ const Navbar = () => {
         </Link>
         {/* socials */}
         <div className="hidden md:flex md:items-center md:space-x-6">
-            <Link href="https://github.com/amabelleS" target="_blank" rel="noopener noreferrer" className='hover:scale-150 transition ease-in-out duration-300 hover:text-[#7929b9]'>
+            <Link href="./resume.pdf" target="_blank" className='hover:scale-150 transition ease-in-out duration-300 hover:text-[#7929b9]'
+            title='Download Resume'
+            download={true}>
+                <BiDownload size={24}/>
+            </Link>
+            <Link href="https://github.com/amabelleS" target="_blank" rel="noopener noreferrer" className='hover:scale-150 transition ease-in-out duration-300 hover:text-[#7929b9]'
+            title='GitHub Link'>
                 <FaGithub size={24}/>
             </Link>
-            <Link href="https://www.linkedin.com/in/amabelle-trachtenberg" target="_blank" rel="noopener noreferrer" className='hover:scale-150 transition ease-in-out duration-300 hover:text-[#7929b9]'>
+            <Link href="https://www.linkedin.com/in/amabelle-trachtenberg" target="_blank" rel="noopener noreferrer" className='hover:scale-150 transition ease-in-out duration-300 hover:text-[#7929b9]'
+            title='LinkedIn Link'>
                 <FaLinkedin size={24}/>
             </Link>
-            <Link href="mailto:amabelledev@gmail.com?subject=Hello!&body=Email from my portfolio:" target="_blank" rel="noopener noreferrer" className='hover:scale-150 transition ease-in-out duration-300 hover:text-[#7929b9]'>
+            <Link href="mailto:amabelledev@gmail.com?subject=Hello!&body=Email from my portfolio:" target="_blank" rel="noopener noreferrer" className='hover:scale-150 transition ease-in-out duration-300 hover:text-[#7929b9]'
+            title='Open Mailbox'>
                 <FiMail size={27}/>
                 {/* <FaMailchimp size={23}/> */}
             </Link>
