@@ -12,6 +12,7 @@ export const metadata = {
   title: "Amabelle's Portfolio | Blog",
   description: 'I post about programming and web development. Created with Next.js and Tailwind CSS by Amabelle Trachtenberg',
   favicon: '/favicon.ico',
+  image: 'https://i.imgur.com/N206wBO.png'
 }
 
 export default function RootLayout({
