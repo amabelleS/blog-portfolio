@@ -8,6 +8,8 @@ import FeaturedProject from './projects/components/FeaturedProject'
 import Link from 'next/link'
 import FeaturedArticles from './blog/components/FeaturedArticles'
 import FeaturedProjects from './projects/components/FeaturedProjects'
+import Image from 'next/image'
+import metaImg from './meta.png'
 // import TransitionEffect from './components/TransitionEffect'
 
 export const revalidate = 86400 // revalidate this page every 86400 seconds / 1 day
@@ -22,6 +24,9 @@ export default function Home() {
       <Skills/>
       <Experience/>
       <Education/>
+      <div className='hidden'>
+        <Image src={metaImg} height={23} width={23} alt='meta image - hack:(' className='hidden' />
+      </div>
       <div className='mx-auto mb-8 px-16'>
         <h4 className="text-4xl md:text-5xl mb-10 text-center font-bold text-lime-200">Featured Projects</h4>
         <FeaturedProjects />
