@@ -3,8 +3,8 @@ import Skills from './components/home-page/Skills'
 import About from './components/home-page/About'
 import Experience from './components/home-page/Experience'
 import Education from './components/home-page/Education'
-import projects from '@/data/projects/projects'
-import FeaturedProject from './projects/components/FeaturedProject'
+// import projects from '@/data/projects/projects'
+// import FeaturedProject from './projects/components/FeaturedProject'
 import Link from 'next/link'
 import FeaturedArticles from './blog/components/FeaturedArticles'
 import FeaturedProjects from './projects/components/FeaturedProjects'
@@ -25,7 +25,7 @@ export default function Home() {
       <Experience/>
       <Education/>
       <div className='hidden'>
-        <Image src={metaImg} height={23} width={23} alt='meta image - hack:(' className='hidden' />
+        <Image src={metaImg} height={123} width={123} alt='meta image - hack:(' className='' />
       </div>
       <div className='mx-auto mb-8 px-16'>
         <h4 className="text-4xl md:text-5xl mb-10 text-center font-bold text-lime-200">Featured Projects</h4>

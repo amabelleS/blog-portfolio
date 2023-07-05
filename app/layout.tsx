@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: "Amabelle's Portfolio | Blog",
   description: 'I post about programming and web development. Created with Next.js and Tailwind CSS by Amabelle Trachtenberg',
-  favicon: '/favicon.ico',
+  favicon: './favicon.ico',
   image: './meta.png'
 }
 
