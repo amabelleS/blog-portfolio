@@ -3,13 +3,9 @@ import Skills from './components/home-page/Skills'
 import About from './components/home-page/About'
 import Experience from './components/home-page/Experience'
 import Education from './components/home-page/Education'
-// import projects from '@/data/projects/projects'
-// import FeaturedProject from './projects/components/FeaturedProject'
 import Link from 'next/link'
 import FeaturedArticles from './blog/components/FeaturedArticles'
 import FeaturedProjects from './projects/components/FeaturedProjects'
-import Image from 'next/image'
-import metaImg from './meta.png'
 // import TransitionEffect from './components/TransitionEffect'
 
 export const revalidate = 86400 // revalidate this page every 86400 seconds / 1 day
@@ -24,11 +20,8 @@ export default function Home() {
       <Skills/>
       <Experience/>
       <Education/>
-      <div className='hidden'>
-        <Image src={metaImg} height={123} width={123} alt='meta image - hack:(' className='' />
-      </div>
       <div className='mx-auto mb-8 px-16'>
-        <h4 className="text-4xl md:text-5xl mb-10 text-center font-bold text-lime-200">Featured Projects</h4>
+        <h4 className="text-4xl md:text-5xl mb-10 text-center font-bold text-lime-200">Latest Projects</h4>
         <FeaturedProjects />
       </div>
       <div className="flex items-center justify-center mx-auto max-w-2xl mb-12 text-center">
