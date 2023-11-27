@@ -16,12 +16,14 @@
   }
 }
 
-body {
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+.custom-header {
+  @apply font-bold text-4xl capitalize text-center border-b-2 border-[#7929b9] text-lime-100 flex items-center justify-center mb-4;
+}
+
+.custom-header2 {
+  @apply font-bold text-2xl capitalize text-center text-[#08993f] border-b-2 border-[#08993f] flex items-center justify-center content-center mb-6;
+}
+
+.custom-btn {
+  @apply flex flex-row justify-center items-center px-4 py-2 outline-none text-xl text-center font-normal whitespace-nowrap rounded-lg w-full md:w-fit cursor-pointer bg-[#7929b9];
 }
