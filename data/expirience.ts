@@ -1,4 +1,4 @@
-export default [
+const experience = [
     {
         position: "Full-Stack Developer",
         dates: "1/2023 - Present",
@@ -20,3 +20,5 @@ export default [
         id: 2,
     },
 ]
+
+export default experience;

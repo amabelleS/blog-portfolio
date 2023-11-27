@@ -1,15 +1,4 @@
-export default [
-    {
-        title: "Meal Wizard",
-        summery: "A next.js 13 app. Using Typescript, tailwind css & openai. The user can get recipes & nutritional values depending on the products he/she has. Deployed on vercel.",
-        image_path: 'https://imgur.com/ZwbfLbY.png',
-        deployed_url: "https://meal-wizard.vercel.app/",
-        github_url: "https://github.com/amabelleS/meal-wizard",
-        category: ["next.js", "tailwindcss", "typescript", "openai"],
-        key_techs: [ "Next.js", "Vercel", "TypeScript", "Tailwind CSS", "OpenAI"],
-        isFeatured: true,
-        id: 7,
-    },
+const projects = [
     {
         title: "Zap-Scrap",
         summery: "A web app that allows users to keep track of several stores location in zap website, It receives a spreadsheets, takes the stores details, scraps in zap website (with cheerio) to get information about each store, and update the results in the app ui, and in the spreadsheet. The app is built with Next.js 13 and deployed on vercel.",
@@ -20,7 +9,7 @@ export default [
         github_url: "https://github.com/amabelleS/scrap-zap",
         category: ["next.js", "tailwindcss", "typescript"],
         key_techs: [ "Next.js", "Vercel", "cheerio"],
-        isFeatured: true,
+        isFeatured: false,
         id: 1,
     },
     {
@@ -79,4 +68,28 @@ export default [
         isFeatured: false,
         id: 6,
     },
+    {
+        title: "Meal Wizard",
+        summery: "A next.js 13 app. Using Typescript, tailwind css & openai. The user can get recipes & nutritional values depending on the products he/she has. Deployed on vercel.",
+        image_path: 'https://imgur.com/ZwbfLbY.png',
+        deployed_url: "https://meal-wizard.vercel.app/",
+        github_url: "https://github.com/amabelleS/meal-wizard",
+        category: ["next.js", "tailwindcss", "typescript", "openai"],
+        key_techs: [ "Next.js", "Vercel", "TypeScript", "Tailwind CSS", "OpenAI"],
+        isFeatured: true,
+        id: 7,
+    },
+    {
+        title: "Petition For Hamas",
+        summery: "Israeli Hasbara. A next.js 14 app. Using Typescript & tailwindcss. Deployed on vercel.",
+        image_path: 'https://i.imgur.com/LkNDD8s.png',
+        deployed_url: "https://petition-for-hamas.vercel.app",
+        github_url: "https://github.com/amabelleS/petition",
+        category: ["next.js", "tailwindcss", "typescript", "tspracticles"],
+        key_techs: [ "Next.js", "Vercel", "TypeScript", "Tailwind CSS", "TsPracticles"],
+        isFeatured: true,
+        id: 7,
+    },
 ]
+
+export default projects;

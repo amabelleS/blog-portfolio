@@ -1,4 +1,4 @@
-export default [
+const education = [
     {
         school: "SVCollege",
         degree: "Front-End Development",
@@ -18,3 +18,5 @@ export default [
         description: "Graduated wuth honors– 96.3 average. Final project in UI/UX design – 100:) During my academic years, I worked as a research assistant in the field of cognitive psychology."
     },
 ]
+
+export default education;
