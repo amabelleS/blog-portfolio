@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import { motion } from "framer-motion"
+import Link from 'next/link'
 
 const hasadnaLink = 'https://open-bus-map-search.hasadna.org.il/dashboard'
 const hamechinaGithub = 'https://github.com/Bootcamp-Projects-Hamechina/hamechina'
@@ -10,8 +11,8 @@ const ABOUT_TEXT = "I'm a dedicated full-stack developer with a focus on React, 
 function About() {
   return (
     <section className='mb-12'>
-        <div className="mx-auto max-w-2xl">
-        <p className=" font-semibold sm:text-2xl md:text-3xl text-center px-4 lg:px-0 text-teal-100"
+        <div className="mx-auto max-w-2xl text-center">
+        <p className="font-semibold sm:text-2xl md:text-3xl px-4 lg:px-0 text-teal-100 border-b-2 border-teal-100 pb-4"
         >
             {/* Animate the about text */}
            {ABOUT_TEXT.split('').map((char, index) => {
@@ -27,6 +28,16 @@ function About() {
                 )
            })}
         </p>
+        <Link 
+          href={hasadnaLink}
+          className=" font-semibold sm:text-2xl md:text-3xl text-center px-4 lg:px-0 text-teal-300"
+            >open-bus website
+        </Link>
+        <Link 
+          href={hamechinaGithub}
+          className=" font-semibold sm:text-2xl md:text-3xl text-center px-4 lg:px-0 text-teal-300"
+            >Hmechina GitHub repo
+        </Link>
         {/* <motion.p className="mt-12 mb-12 text-3xl text-center dark:text-white/90">
            Hello, I'm [Your Name], a dedicated full-stack developer specializing in React, Node.js, Next.js, and various other technologies. Currently, I'm fortunate to be working in a small startup where my passion for problem-solving and knack for debugging are put to the test. From crafting seamless user experiences to implementing clean and efficient code, I strive to deliver exceptional end-to-end solutions. With a genuine love for what I do and a continuous drive for learning, I'm excited to contribute my skills to create meaningful and innovative projects.
         </motion.p> */}
