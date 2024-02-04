@@ -10,7 +10,7 @@ function Logo() {
     width="0"
     height="0"
     className="bg-mint text-mint fill-current m-0"
-    // priority={true}
+    priority={true}
     style={{ width: '142px', height: 'auto' }}
     // style={{objectFit: "contain"}}
   />

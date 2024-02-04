@@ -99,7 +99,18 @@ const projects = [
         category: ["next.js", "tailwindcss", "typescript", "tspracticles"],
         key_techs: [ "Next.js", "Vercel", "TypeScript", "Tailwind CSS"],
         isFeatured: true,
-        id: 8,
+        id: 9,
+    },
+    {
+        title: "DataBus",
+        summery: "My favorite open source project to contribute to. I started as a contributer, on the front (react.js). Now I also help to maintain the project.",
+        image_path: 'https://i.imgur.com/1GhjqxN.png',
+        deployed_url: "https://open-bus-map-search.hasadna.org.il/dashboard",
+        github_url: "https://github.com/hasadna/open-bus-map-search",
+        category: ["react.js", "typescript"],
+        key_techs: ["react.js", "typescript"],
+        isFeatured: true,
+        id: 10,
     },
 ]
 
