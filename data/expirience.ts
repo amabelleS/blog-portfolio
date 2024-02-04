@@ -4,6 +4,7 @@ const experience = [
         dates: "7/10/2023 - Present",
         company: "Open Source Projects",
         company_url: "https://open-bus-map-search.hasadna.org.il/dashboard",
+        company_url2: "https://antisemitic-reporter-client.vercel.app",
         description: "I actively contribute to open-source and Israely Hasbara projects. 'Hamechina' a Next.js app tailored for a community of developers, a project I initiated and currently maintain. In the 'Maakaf' community, mainly the open-bus-search. Hasbara projects - The Antisemetic Reporter - in development",   
         location: "Tel-Aviv, Israel",
         key_techs: ["Next.js", "Node.js", "TailwindCSS", "TypeScript", "Git", "GitHub", "Docker", "Figma"],

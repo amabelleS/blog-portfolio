@@ -4,11 +4,13 @@ import React from 'react'
 import { motion, useScroll, Variants } from 'framer-motion'
 import LiIcon from './LiIcon'
 import expirience from '@/data/expirience'
+import Link from 'next/link'
 
 type ExpirienceDetailsProps = {
     position: string,
     company: string,
     company_url: string,
+    company_url2?: string,
     dates: string,
     location: string,
     description: string,
@@ -27,7 +29,7 @@ const variants: Variants = {
     }
   };
 
-const Details = ({position, company, company_url, dates, location, description}: ExpirienceDetailsProps) => {
+const Details = ({position, company, company_url, company_url2, dates, location, description}: ExpirienceDetailsProps) => {
     const ref = React.useRef(null)
 
     return <motion.li ref={ref} 
@@ -44,19 +46,29 @@ const Details = ({position, company, company_url, dates, location, description}:
             // transition={{doration: 0.5, type: 'spring'}}
             // transition={{type: 'spring', bounce: 0.25}}
         >
-            {/* <h3 className='capitalize font-bold text-2xl'>{position} 
-                <Link href={company_url} target='_blank' className='text-lime-600 capitalize'>
-                    @{company}
-                </Link>
-            </h3> */}
-            <h3 className='capitalize font-bold  text-teal-400 text-2xl'>
-                {position}
+            <h3 className='capitalize font-bold text-2xl'>{position} 
                 <span className=' text-lime-600 capitalize'>
                     @{company}
                 </span>
             </h3>
+            {/* <h3 className='capitalize font-bold  text-teal-400 text-2xl'>
+                {position}
+                <span className=' text-lime-600 capitalize'>
+                    @{company}
+                </span>
+            </h3> */}
             <span className='capitalize text-lime-100 font-medium'>{dates} | {location}</span>
             <p className='font-medium  text-teal-100 w-full'>{description}</p>
+            {company_url !== '/' &&
+            <Link href={company_url} target='_blank' className='text-lime-600 capitalize'>
+                @{company_url}
+            </Link>
+            }
+            {company_url2 && 
+                <Link href={company_url2} target='_blank' className='text-lime-600 capitalize'>
+                    @{company_url2}
+                </Link>
+            } 
         </motion.div>
     </motion.li>
 }
@@ -87,6 +99,7 @@ function Experience() {
                     position={exp.position}
                     company={exp.company}
                     company_url={exp.company_url}
+                    company_url2={exp.company_url2}
                     dates={exp.dates}
                     location={exp.location}
                     description={exp.description}

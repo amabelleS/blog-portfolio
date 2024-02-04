@@ -76,7 +76,7 @@ const projects = [
         github_url: "https://github.com/amabelleS/meal-wizard",
         category: ["next.js", "tailwindcss", "typescript", "openai"],
         key_techs: [ "Next.js", "Vercel", "TypeScript", "Tailwind CSS", "OpenAI"],
-        isFeatured: true,
+        isFeatured: false,
         id: 7,
     },
     {
@@ -87,8 +87,19 @@ const projects = [
         github_url: "https://github.com/amabelleS/petition",
         category: ["next.js", "tailwindcss", "typescript", "tspracticles"],
         key_techs: [ "Next.js", "Vercel", "TypeScript", "Tailwind CSS", "TsPracticles"],
+        isFeatured: false,
+        id: 8,
+    },
+    {
+        title: "Report AntiSemitism Now",
+        summery: "The Antisemitic Incident Reporting System is a user-friendly platform facilitating the reporting of antisemitic events. Initiated in response to the events of October 7th.  I built the front-end using next.js, Typescript & tailwindcss. Deployed on vercel.",
+        image_path: 'https://i.imgur.com/21qV1Qg.png',
+        deployed_url: "https://antisemitic-reporter-client.vercel.app/",
+        github_url: "https://github.com/The-Antisemitic-Monitoring/antisemitic-reporter-client",
+        category: ["next.js", "tailwindcss", "typescript", "tspracticles"],
+        key_techs: [ "Next.js", "Vercel", "TypeScript", "Tailwind CSS"],
         isFeatured: true,
-        id: 7,
+        id: 8,
     },
 ]
 
