@@ -52,7 +52,9 @@ const Navbar = () => {
         </Link>
         {/* socials */}
         <div className="hidden md:flex md:items-center md:space-x-6">
-            <Link href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:899ed69f-8c3a-4663-9945-afbce9c68389" 
+            <Link 
+                href="https://flowcv.com/resume/0rs597huf5" 
+                // href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:899ed69f-8c3a-4663-9945-afbce9c68389" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className='hover:scale-150 transition ease-in-out duration-300 hover:text-[#7929b9]'
